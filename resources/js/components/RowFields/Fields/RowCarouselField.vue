@@ -19,6 +19,7 @@
                              :value="slide.value"
                              :id="slide.id"
                              :readonly="readonly"
+                             :in-slide="true"
                              @fieldUpdated="handleFieldUpdate">
             </row-video-field>
           </template>
@@ -40,6 +41,7 @@
                              :value="tempSlide.value"
                              :id="tempSlide.id"
                              :readonly="readonly"
+                             :in-slide="true"
                              @fieldUpdated="handleFieldUpdate">
             </row-video-field>
           </template>

@@ -13,7 +13,7 @@
       <div class="btn btn-default btn-primary text-center clickable" @click="handleUrlSubmit">Submit</div>
     </div>
     <div class="w-full" v-else>
-      <vimeo-player ref="player" :video-id="vimeoID" :options="{title: '0', byline: '0', portrait: '0', width: '500'}" v-if="type === 'vimeo'"/>
+      <vimeo-player ref="player" :video-id="vimeoID" :options="{title: '0', byline: '0', portrait: '0', width: inSlide ? '440' : '500'}" v-if="type === 'vimeo'"/>
       <youtube :video-id="youtubeID" v-else-if="type === 'youtube'" width="100%"></youtube>
       <video :src="value" width="100%" v-else></video>
     </div>
@@ -37,6 +37,11 @@
         type: String,
         required: false,
         default: () => { return '' }
+      },
+      inSlide: {
+        type: Boolean,
+        required: false,
+        default: () => { return false }
       },
       readonly: {
         type: Boolean,
