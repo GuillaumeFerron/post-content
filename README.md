@@ -6,6 +6,8 @@ The field is a post content writer and supports images, videos, paragraphs and c
 
 ![PostContent Demo](public/images/demo.gif)
 
+[Demo Video](https://www.useloom.com/share/f06ba29ccf914e17821c98710cf68114)
+
 ## How it works
 
 This package adds orderable rows:
