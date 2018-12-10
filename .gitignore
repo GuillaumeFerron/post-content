@@ -1,5 +1,4 @@
 /node_modules
-/dist
 /vendor
 .env
 .phpunit.result.cache

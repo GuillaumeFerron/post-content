@@ -42,7 +42,7 @@ export const carouselIcon = '<svg style="transition: all 0.2s;" ' +
   '<path data-name="Path" d="M82,31.1a3.5,3.5,0,0,0-3.5,3.5V65.4a3.5,3.5,0,1,0,7,0V34.6A3.5,3.5,0,0,0,82,31.1Z"></path>' +
   '<path data-name="Path" d="M92,36.1a3.5,3.5,0,0,0-3.5,3.5V60.4a3.5,3.5,0,0,0,7,0V39.6A3.5,3.5,0,0,0,92,36.1Z"></path></g></svg>'
 
-export const moveIcon = '<svg fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" ' +
+export const moveIcon = '<svg fill="var(--primary)" height="30" xmlns="http://www.w3.org/2000/svg" ' +
   'data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px">' +
   '<path d="M97.09,51.81c.05-.1.11-.2.16-.31a4,4,0,0,0,.14-.44c0-.1.06-.19.08-.29a4,4,0,0,0,.08-.75h0a4,4,0,' +
   '0,0-.08-.75c0-.1-.06-.2-.08-.29a4,4,0,0,0-.14-.44c0-.11-.1-.21-.16-.31a3.93,3.93,0,0,0-.2-.36c-.07-.11-.15' +
