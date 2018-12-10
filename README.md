@@ -5,7 +5,7 @@ This package adds a custom field to nova resources.
 The field is a post content writer and supports images, videos, paragraphs and carousels.
 
 ![PostContent Demo](public/images/demo.gif)
-
+post
 [Demo Video](https://www.useloom.com/share/f06ba29ccf914e17821c98710cf68114)
 
 ## How it works
@@ -23,7 +23,7 @@ Currently this package works only supports :
 You may require this package using composer:
 
 ```
-composer require guillaumeferron/PostContent
+composer require guillaumeferron/post-content
 ```
 
 You can directly use the PostContent in the ```fields()``` methods by relating it to a **longText** SQL attribute:

@@ -1,6 +1,6 @@
 {
-    "name": "guillaumeferron/PostContent",
-    "description": "A Laravel Nova field.",
+    "name": "guillaumeferron/post-content",
+    "description": "A post content builder field for Laravel Nova.",
     "keywords": [
         "laravel",
         "nova"
