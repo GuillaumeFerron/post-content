@@ -5,14 +5,14 @@ This package adds a custom field to nova resources.
 The field is a post content writer and supports images, videos, paragraphs and carousels.
 
 ![PostContent Demo](public/images/demo.gif)
-post
+
 [Demo Video](https://www.useloom.com/share/f06ba29ccf914e17821c98710cf68114)
 
 ## How it works
 
 This package adds orderable rows:
 
-Currently this package works only supports :
+Currently this package only supports :
 - Plain text paragraphs.
 - Url-provided images.
 - Url-provided videos (Youtube | Vimeo | Server Storage).
