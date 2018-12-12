@@ -76,9 +76,9 @@ PostContent::make('attribute_name')->hideHelpers()
 *Hide the blue background helpers displayed when a row needs to be filled*
 
 ## Roadmap
-- [] Make the initial row dynamic depending on what fields are specified or not.
-- [] Make the paragraphs' text editor WYSIWYG.
-- [] Add the two columns options to the paragraphs.
+- [ ] Make the initial row dynamic depending on what fields are specified or not.
+- [ ] Make the paragraphs' text editor WYSIWYG.
+- [ ] Add the two columns options to the paragraphs.
 
 
 ## License
