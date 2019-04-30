@@ -6,7 +6,7 @@ The field is a post content writer and supports images, videos, paragraphs and c
 
 ![PostContent Demo](public/images/demo.gif)
 
-[Demo Video](https://www.useloom.com/share/f06ba29ccf914e17821c98710cf68114)
+[Demo Video](https://www.loom.com/share/eb8fee941c4d4050a9b8641f593c7800)
 
 ## How it works
 
