@@ -5676,7 +5676,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.row-carousel-field-container[data-v-7315ad9f] {\n  position: relative;\n  /*border: solid 1px #aaa;*/\n  border-radius: 4px;\n}\n.carousel-title[data-v-7315ad9f] {\n  position: absolute;\n  top: 5px;\n  left: 5px;\n  color: #aaa;\n}\n", ""]);
+exports.push([module.i, "\n.row-carousel-field-container[data-v-7315ad9f] {\n  position: relative;\n}\n", ""]);
 
 // exports
 
@@ -5696,7 +5696,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowContainer__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowContainer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__RowContainer__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_Miscellaneous__ = __webpack_require__(12);
-//
 //
 //
 //
@@ -6468,20 +6467,9 @@ var render = function() {
     "div",
     { staticClass: "row-carousel-field-container w-full" },
     [
-      _c("div", { staticClass: "carousel-title" }, [
-        _vm._v(_vm._s(_vm.__("Carousel")))
-      ]),
-      _vm._v(" "),
       _c(
         "carousel",
-        {
-          staticStyle: {
-            border: "solid 1px #aaa",
-            "border-radius": "4px",
-            padding: "25px 20px"
-          },
-          attrs: { perPage: 1 }
-        },
+        { attrs: { perPage: 1 } },
         [
           _vm._l(_vm.value, function(slide) {
             return _c(

@@ -1,7 +1,6 @@
 <template>
   <div class="row-carousel-field-container w-full">
-    <div class="carousel-title">{{ __('Carousel') }}</div>
-    <carousel :perPage="1" style="border: solid 1px #aaa; border-radius: 4px; padding: 25px 20px;">
+    <carousel :perPage="1">
       <slide v-for="(slide) in value" :key="`curr-${slide.id}`">
         <row-container :id="slide.id"
                        :type="slide.type"
@@ -196,16 +195,5 @@
 <style scoped>
   .row-carousel-field-container {
     position: relative;
-    /*border: solid 1px #aaa;*/
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-  }
-
-  .carousel-title {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    color: #aaa;
   }
 </style>
