@@ -67,3 +67,15 @@ export const addIcon = '<svg fill="var(--primary)" xmlns="http://www.w3.org/2000
   '50,7z M50,87c-20.4,0-37-16.6-37-37   c0-20.4,16.6-37,37-37c20.4,0,37,16.6,37,37C87,70.4,70.4,87,50,87z"></path><path\n' +
   'd="M67,47H53V33c0-1.7-1.3-3-3-3s-3,1.3-3,3v14H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h14v14c0,1.7,1.3,3,3,3s3-1.3,3-3V53h14  ' +
   ' c1.7,0,3-1.3,3-3S68.7,47,67,47z"></path></g></svg>'
+
+export const trashIcon = '<svg style="width: 20px; height: 24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">\n' +
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />\n' +
+  '</svg>'
+
+export const checkIcon = '<svg style="width: 20px; height: 24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">\n' +
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />\n' +
+  '</svg>'
+
+export const cancelIcon = '<svg style="width: 20px; height: 24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">\n' +
+  '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />\n' +
+  '</svg>'

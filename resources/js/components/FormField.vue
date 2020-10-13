@@ -94,6 +94,7 @@
     },
     mounted() {
       if (this.field.value) {
+        console.log(this.field)
         this.rowFields = JSON.parse(this.field.value).data
       } else {
         this.setInitialField()
