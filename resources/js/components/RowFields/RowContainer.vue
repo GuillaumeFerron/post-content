@@ -7,14 +7,20 @@
       <transition name="fade">
         <div v-if="!deleting" @click="attemptDelete" class="delete-icon-copy my-1 px-2 py-1"
              style="font-size: 15px; text-align: center;">
-          Delete&nbsp;{{ inSlide ? 'Slide' : 'Row' }}
+          <svg style="width: 20px; height: 24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
         </div>
         <div v-else :class="`${inSlide ? `flex` : `flex-column`}`" style="font-size: 15px; text-align: center;">
           <div @click="handleDelete" class="confirm-delete-icon my-1 px-2 py-1">
-            Confirm&nbsp;Delete
+            <svg style="width: 20px; height: 24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
           </div>
           <div @click="cancelDelete" class="cancel-delete-icon my-1 px-2 py-1">
-            Cancel
+            <svg style="width: 20px; height: 24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </div>
         </div>
       </transition>
@@ -154,23 +160,62 @@
   }
 
   .delete-icon-copy {
-    border: solid 1px #ff0000;
+    border: solid 2px #ff0000;
     border-radius: 25px;
+    transition: all 0.2s;
+  }
+
+  .delete-icon-copy:hover {
+    background-color: #ff0000;
+  }
+
+  .delete-icon-copy svg {
+    transition: all 0.2s;
+  }
+
+  .delete-icon-copy:hover svg {
+    stroke: #fff;
   }
 
   .confirm-delete-icon, .cancel-delete-icon {
-    border: solid 1px;
+    border: solid 2px;
     border-radius: 25px;
   }
 
   .confirm-delete-icon {
     color: #ff0000;
     border-color: #ff0000;
+    transition: all 0.2s;
+  }
+
+  .confirm-delete-icon:hover {
+    background-color: #ff0000;
+  }
+
+  .confirm-delete-icon svg {
+    transition: all 0.2s;
+  }
+
+  .confirm-delete-icon:hover svg {
+    stroke: #fff;
   }
 
   .cancel-delete-icon {
     color: #aaa;
     border-color: #aaa;
+    transition: all 0.2s;
+  }
+
+  .cancel-delete-icon:hover {
+    background-color: #aaa;
+  }
+
+  .cancel-delete-icon svg {
+    transition: all 0.2s;
+  }
+
+  .cancel-delete-icon:hover svg {
+    stroke: #fff;
   }
 
   .move-icon {

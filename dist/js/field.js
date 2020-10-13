@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -274,7 +274,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(28)
+var listToStyles = __webpack_require__(41)
 
 /*
 type StyleObject = {
@@ -516,13 +516,13 @@ module.exports = g;
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(26)
+  __webpack_require__(39)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(29)
+var __vue_script__ = __webpack_require__(42)
 /* template */
-var __vue_template__ = __webpack_require__(30)
+var __vue_template__ = __webpack_require__(43)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -567,13 +567,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(31)
+  __webpack_require__(44)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(33)
+var __vue_script__ = __webpack_require__(46)
 /* template */
-var __vue_template__ = __webpack_require__(34)
+var __vue_template__ = __webpack_require__(47)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -613,18 +613,41 @@ module.exports = Component.exports
 
 /***/ }),
 /* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return textIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return imageIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return videoIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return carouselIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return moveIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addIcon; });
+var textIcon = '<svg style="enable-background:new 0 0 100 100; transition: all 0.2s;" ' + 'fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ' + 'version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">' + '<path d="M21.2,62h32c2.2,0,4-1.8,4-4s-1.8-4-4-4h-32c-2.2,0-4,1.8-4,4S19,62,21.2,62z"></path>' + '<path d="M78.8,70H21.2c-2.2,0-4,1.8-4,4s1.8,4,4,4h57.5c2.2,0,4-1.8,4-4S81,70,78.8,70z"></path>' + '<path d="M78.8,38H21.2c-2.2,0-4,1.8-4,4s1.8,4,4,4h57.5c2.2,0,4-1.8,4-4S81,38,78.8,38z"></path>' + '<path d="M21.2,30h32c2.2,0,4-1.8,4-4s-1.8-4-4-4h-32c-2.2,0-4,1.8-4,4S19,30,21.2,30z"></path>' + '</svg>';
+
+var imageIcon = '<svg style="transition: all 0.2s;" ' + 'fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ' + 'version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">' + '<path d="M6.2,78.9c0,8.2,6.7,15,15,15h57.7c8.3,0,15-6.7,15-15V64.2c0,0,0-0.1,0-0.1l0-0.2c0-0.9-0.4-1.7-1-2.4L71.9,40.6 ' + ' c-1.4-1.4-3.6-1.4-4.9,0L43.4,64.3L30.7,51.6c-1.4-1.4-3.6-1.4-4.9,0L13.2,64.2V21.1c0-4.4,3.6-8,8-8h57.7c4.4,0,8,3.6,8,8v21.7 ' + ' c0,1.9,1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5V21.1c0-8.2-6.7-15-15-15H21.2c-8.3,0-15,6.7-15,15V78.9z M13.2,74.1l15.1-15.1l12.6,12.6 ' + ' c1.4,1.4,3.6,1.4,4.9,0l23.6-23.6l17.4,17.4v13.4c0,4.4-3.6,8-8,8H21.2c-4.4,0-8-3.6-8-8V74.1z M29.1,31.9c0,2.8,2.3,5.1,5.1,5.1 ' + ' s5.1-2.3,5.1-5.1c0-1.9,1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5c0,6.7-5.4,12.1-12.1,12.1s-12.1-5.4-12.1-12.1s5.4-12.1,12.1-12.1 ' + ' c1.9,0,3.5,1.6,3.5,3.5s-1.6,3.5-3.5,3.5C31.4,26.8,29.1,29.1,29.1,31.9z"></path></svg>';
+
+var videoIcon = '<svg style="enable-background:new 0 0 100 100; ' + 'transition: all 0.2s;" fill="var(--primary)" xmlns:x="http://ns.adobe.com/Extensibility/1.0/"' + ' xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" ' + 'xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" ' + 'x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve"><switch>' + '<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"></foreignObject>' + '<g i:extraneous="self"><g><path d="M93.5,39.5c-2.5-1.5-5.5-1.5-8,0l-12.3,7v-3.2c0-5.5-4.5-10-10-10h-1.5c2-2.7,3.2-6.1,3.2-9.7c0-9-7.4-16.4-16.4-16.4  ' + '   c-6.2,0-11.5,3.4-14.3,8.4c-2.5-2.3-5.8-3.7-9.4-3.7c-7.7,0-14,6.3-14,14c0,2.7,0.8,5.2,2.1,7.3h-0.3c-5.5,0-10,4.5-10,10v39.3  ' + '   c0,5.5,4.5,10,10,10h50.7c5.5,0,10-4.5,10-10v-3.2l12.2,7.1c1.3,0.7,2.6,1.1,4,1.1c1.4,0,2.8-0.4,4-1.1c2.5-1.5,4-4,4-6.9V46.5  ' + '   C97.5,43.6,96,41,93.5,39.5z M48.6,14c5.3,0,9.7,4.3,9.7,9.7c0,5.3-4.3,9.7-9.7,9.7c-5.3,0-9.7-4.3-9.7-9.7  ' + '   C38.8,18.4,43.2,14,48.6,14z M24.8,18.7c4,0,7.3,3.3,7.3,7.3s-3.3,7.3-7.3,7.3c-4,0-7.3-3.3-7.3-7.3S20.8,18.7,24.8,18.7z   ' + '   M63.2,86H12.5c-1.8,0-3.3-1.5-3.3-3.3V43.4c0-1.8,1.5-3.3,3.3-3.3h50.7c1.8,0,3.3,1.5,3.3,3.3v4.2H21.2c-1.9,0-3.4,1.5-3.4,3.4  ' + '   c0,1.9,1.5,3.4,3.4,3.4h45.4v28.4C66.5,84.5,65,86,63.2,86z M90.8,79.6c0,0.6-0.4,1-0.6,1.1c-0.2,0.2-0.7,0.3-1.3,0l-15.6-9V54.3   ' + '  l15.6-9c0.6-0.3,1.1-0.2,1.3,0c0.2,0.1,0.6,0.5,0.6,1.1V79.6z"></path><circle cx="19.8" cy="75.4" r="5"></circle></g></g></switch></svg>';
+
+var carouselIcon = '<svg style="transition: all 0.2s;" ' + 'fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" ' + 'viewBox="0 0 100 100" x="0px" y="0px"><g data-name="Group">' + '<path data-name="Compound Path" d="M67,26.1H33a8.5,8.5,0,0,0-8.5,8.5V65.4A8.5,8.5,0,0,0,33,73.9H67a8.5,8.5,0,0,0,8.5-8.5V34.6A8.5,8.5,' + '0,0,0,67,26.1Zm1.5,39.3A1.5,1.5,0,0,1,67,66.9H33a1.5,1.5,0,0,1-1.5-1.5V34.6A1.5,1.5,0,0,1,33,33.1H67a1.5,1.5,0,0,1,1.5,1.5Z"></path>' + '<path data-name="Path" d="M18,31.1a3.5,3.5,0,0,0-3.5,3.5V65.4a3.5,3.5,0,0,0,7,0V34.6A3.5,3.5,0,0,0,18,31.1Z"></path>' + '<path data-name="Path" d="M8,36.1a3.5,3.5,0,0,0-3.5,3.5V60.4a3.5,3.5,0,0,0,7,0V39.6A3.5,3.5,0,0,0,8,36.1Z"></path>' + '<path data-name="Path" d="M82,31.1a3.5,3.5,0,0,0-3.5,3.5V65.4a3.5,3.5,0,1,0,7,0V34.6A3.5,3.5,0,0,0,82,31.1Z"></path>' + '<path data-name="Path" d="M92,36.1a3.5,3.5,0,0,0-3.5,3.5V60.4a3.5,3.5,0,0,0,7,0V39.6A3.5,3.5,0,0,0,92,36.1Z"></path></g></svg>';
+
+var moveIcon = '<svg fill="var(--primary)" height="30" xmlns="http://www.w3.org/2000/svg" ' + 'data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px">' + '<path d="M97.09,51.81c.05-.1.11-.2.16-.31a4,4,0,0,0,.14-.44c0-.1.06-.19.08-.29a4,4,0,0,0,.08-.75h0a4,4,0,' + '0,0-.08-.75c0-.1-.06-.2-.08-.29a4,4,0,0,0-.14-.44c0-.11-.1-.21-.16-.31a3.93,3.93,0,0,0-.2-.36c-.07-.11-.15' + '-.2-.23-.3s-.12-.17-.19-.25L83.72,33.52A4,4,0,0,0,77.85,39l6.53,7H61.27a4,4,0,0,0,0,8H84.38l-6.53,7a4,4,0,' + '0,0,5.87,5.44L96.48,52.72c.07-.08.12-.16.19-.25s.16-.2.23-.3A3.92,3.92,0,0,0,97.09,51.81Z"></path>' + '<path d="M2.91,48.19c-.05.1-.11.2-.16.31a4,4,0,0,0-.14.44c0,.1-.06.19-.08.29a4,4,0,0,0-.08.75h0a4,4,0,0,' + '0,.08.75c0,.1.06.2.08.29a3.94,3.94,0,0,0,.14.43c0,.11.1.21.16.31a3.92,3.92,0,0,0,.2.36c.07.11.15.2.23.3s' + '.12.17.19.25L16.28,66.48A4,4,0,0,0,22.15,61l-6.53-7H38.73a4,4,0,0,0,0-8H15.62l6.53-7a4,4,0,0,0-5.87-5.44L3.' + '52,47.28c-.07.08-.12.16-.19.25s-.16.2-.23.3A3.93,3.93,0,0,0,2.91,48.19Z"></path>' + '<path d="M66.69,78.07A4,4,0,0,0,61,77.85l-7,6.53V61.27a4,4,0,0,0-8,0V84.38l-7-6.53a4,4,0,1,0-5.44,5.87L47.' + '28,96.48c.08.07.16.12.24.18s.2.17.31.24a3.92,3.92,0,0,0,.36.2c.1.05.2.11.31.16a4,4,0,0,0,.44.14l.29.08a3.84,' + '3.84,0,0,0,1.53,0l.29-.08a4,4,0,0,0,.44-.14c.11,0,.21-.1.31-.16a3.89,3.89,0,0,0,.36-.2c.11-.07.21-.16.31-.24' + 's.16-.11.24-.18L66.48,83.72A4,4,0,0,0,66.69,78.07Z"></path>' + '<path d="M61,22.15a4,4,0,1,0,5.44-5.87L52.72,3.52c-.08-.07-.16-.12-.25-.19s-.2-.16-.3-.23a3.91,3.91,0,0' + ',0-.36-.2c-.1-.05-.2-.11-.31-.15a4,4,0,0,0-.44-.14l-.29-.08A4,4,0,0,0,50,2.46h0a4,4,0,0,0-.75.08l-.3.08' + 'a4,4,0,0,0-.43.13c-.11,0-.21.1-.32.16a3.93,3.93,0,0,0-.36.19c-.11.07-.21.15-.31.23s-.17.12-.24.19L33.52,' + '16.28A4,4,0,0,0,39,22.15l7-6.53V38.73a4,4,0,0,0,8,0V15.62Z"></path></svg>';
+
+var addIcon = '<svg fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" height="40" xmlns:xlink="http://www.w3.org/1999/xlink"\n' + 'version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="transition: all 0.2s;"\n' + 'xml:space="preserve"><g><path d="M50,7C26.3,7,7,26.3,7,50c0,23.7,19.3,43,43,43c23.7,0,43-19.3,43-43C93,26.3,73.7,7,' + '50,7z M50,87c-20.4,0-37-16.6-37-37   c0-20.4,16.6-37,37-37c20.4,0,37,16.6,37,37C87,70.4,70.4,87,50,87z"></path><path\n' + 'd="M67,47H53V33c0-1.7-1.3-3-3-3s-3,1.3-3,3v14H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h14v14c0,1.7,1.3,3,3,3s3-1.3,3-3V53h14  ' + ' c1.7,0,3-1.3,3-3S68.7,47,67,47z"></path></g></svg>';
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(44)
+  __webpack_require__(57)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(46)
+var __vue_script__ = __webpack_require__(59)
 /* template */
-var __vue_template__ = __webpack_require__(47)
+var __vue_template__ = __webpack_require__(60)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -663,15 +686,205 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 7 */
+/* 8 */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(35)
+var __vue_script__ = __webpack_require__(48)
 /* template */
-var __vue_template__ = __webpack_require__(36)
+var __vue_template__ = __webpack_require__(49)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -710,19 +923,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(37)
+  __webpack_require__(50)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(39)
+var __vue_script__ = __webpack_require__(52)
 /* template */
-var __vue_template__ = __webpack_require__(48)
+var __vue_template__ = __webpack_require__(61)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -761,19 +974,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(40)
+  __webpack_require__(53)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(42)
+var __vue_script__ = __webpack_require__(55)
 /* template */
-var __vue_template__ = __webpack_require__(43)
+var __vue_template__ = __webpack_require__(56)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -812,30 +1025,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return textIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return imageIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return videoIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return carouselIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return moveIcon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addIcon; });
-var textIcon = '<svg style="enable-background:new 0 0 100 100; transition: all 0.2s;" ' + 'fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ' + 'version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">' + '<path d="M21.2,62h32c2.2,0,4-1.8,4-4s-1.8-4-4-4h-32c-2.2,0-4,1.8-4,4S19,62,21.2,62z"></path>' + '<path d="M78.8,70H21.2c-2.2,0-4,1.8-4,4s1.8,4,4,4h57.5c2.2,0,4-1.8,4-4S81,70,78.8,70z"></path>' + '<path d="M78.8,38H21.2c-2.2,0-4,1.8-4,4s1.8,4,4,4h57.5c2.2,0,4-1.8,4-4S81,38,78.8,38z"></path>' + '<path d="M21.2,30h32c2.2,0,4-1.8,4-4s-1.8-4-4-4h-32c-2.2,0-4,1.8-4,4S19,30,21.2,30z"></path>' + '</svg>';
-
-var imageIcon = '<svg style="transition: all 0.2s;" ' + 'fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ' + 'version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">' + '<path d="M6.2,78.9c0,8.2,6.7,15,15,15h57.7c8.3,0,15-6.7,15-15V64.2c0,0,0-0.1,0-0.1l0-0.2c0-0.9-0.4-1.7-1-2.4L71.9,40.6 ' + ' c-1.4-1.4-3.6-1.4-4.9,0L43.4,64.3L30.7,51.6c-1.4-1.4-3.6-1.4-4.9,0L13.2,64.2V21.1c0-4.4,3.6-8,8-8h57.7c4.4,0,8,3.6,8,8v21.7 ' + ' c0,1.9,1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5V21.1c0-8.2-6.7-15-15-15H21.2c-8.3,0-15,6.7-15,15V78.9z M13.2,74.1l15.1-15.1l12.6,12.6 ' + ' c1.4,1.4,3.6,1.4,4.9,0l23.6-23.6l17.4,17.4v13.4c0,4.4-3.6,8-8,8H21.2c-4.4,0-8-3.6-8-8V74.1z M29.1,31.9c0,2.8,2.3,5.1,5.1,5.1 ' + ' s5.1-2.3,5.1-5.1c0-1.9,1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5c0,6.7-5.4,12.1-12.1,12.1s-12.1-5.4-12.1-12.1s5.4-12.1,12.1-12.1 ' + ' c1.9,0,3.5,1.6,3.5,3.5s-1.6,3.5-3.5,3.5C31.4,26.8,29.1,29.1,29.1,31.9z"></path></svg>';
-
-var videoIcon = '<svg style="enable-background:new 0 0 100 100; ' + 'transition: all 0.2s;" fill="var(--primary)" xmlns:x="http://ns.adobe.com/Extensibility/1.0/"' + ' xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" ' + 'xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" ' + 'x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve"><switch>' + '<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"></foreignObject>' + '<g i:extraneous="self"><g><path d="M93.5,39.5c-2.5-1.5-5.5-1.5-8,0l-12.3,7v-3.2c0-5.5-4.5-10-10-10h-1.5c2-2.7,3.2-6.1,3.2-9.7c0-9-7.4-16.4-16.4-16.4  ' + '   c-6.2,0-11.5,3.4-14.3,8.4c-2.5-2.3-5.8-3.7-9.4-3.7c-7.7,0-14,6.3-14,14c0,2.7,0.8,5.2,2.1,7.3h-0.3c-5.5,0-10,4.5-10,10v39.3  ' + '   c0,5.5,4.5,10,10,10h50.7c5.5,0,10-4.5,10-10v-3.2l12.2,7.1c1.3,0.7,2.6,1.1,4,1.1c1.4,0,2.8-0.4,4-1.1c2.5-1.5,4-4,4-6.9V46.5  ' + '   C97.5,43.6,96,41,93.5,39.5z M48.6,14c5.3,0,9.7,4.3,9.7,9.7c0,5.3-4.3,9.7-9.7,9.7c-5.3,0-9.7-4.3-9.7-9.7  ' + '   C38.8,18.4,43.2,14,48.6,14z M24.8,18.7c4,0,7.3,3.3,7.3,7.3s-3.3,7.3-7.3,7.3c-4,0-7.3-3.3-7.3-7.3S20.8,18.7,24.8,18.7z   ' + '   M63.2,86H12.5c-1.8,0-3.3-1.5-3.3-3.3V43.4c0-1.8,1.5-3.3,3.3-3.3h50.7c1.8,0,3.3,1.5,3.3,3.3v4.2H21.2c-1.9,0-3.4,1.5-3.4,3.4  ' + '   c0,1.9,1.5,3.4,3.4,3.4h45.4v28.4C66.5,84.5,65,86,63.2,86z M90.8,79.6c0,0.6-0.4,1-0.6,1.1c-0.2,0.2-0.7,0.3-1.3,0l-15.6-9V54.3   ' + '  l15.6-9c0.6-0.3,1.1-0.2,1.3,0c0.2,0.1,0.6,0.5,0.6,1.1V79.6z"></path><circle cx="19.8" cy="75.4" r="5"></circle></g></g></switch></svg>';
-
-var carouselIcon = '<svg style="transition: all 0.2s;" ' + 'fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" ' + 'viewBox="0 0 100 100" x="0px" y="0px"><g data-name="Group">' + '<path data-name="Compound Path" d="M67,26.1H33a8.5,8.5,0,0,0-8.5,8.5V65.4A8.5,8.5,0,0,0,33,73.9H67a8.5,8.5,0,0,0,8.5-8.5V34.6A8.5,8.5,' + '0,0,0,67,26.1Zm1.5,39.3A1.5,1.5,0,0,1,67,66.9H33a1.5,1.5,0,0,1-1.5-1.5V34.6A1.5,1.5,0,0,1,33,33.1H67a1.5,1.5,0,0,1,1.5,1.5Z"></path>' + '<path data-name="Path" d="M18,31.1a3.5,3.5,0,0,0-3.5,3.5V65.4a3.5,3.5,0,0,0,7,0V34.6A3.5,3.5,0,0,0,18,31.1Z"></path>' + '<path data-name="Path" d="M8,36.1a3.5,3.5,0,0,0-3.5,3.5V60.4a3.5,3.5,0,0,0,7,0V39.6A3.5,3.5,0,0,0,8,36.1Z"></path>' + '<path data-name="Path" d="M82,31.1a3.5,3.5,0,0,0-3.5,3.5V65.4a3.5,3.5,0,1,0,7,0V34.6A3.5,3.5,0,0,0,82,31.1Z"></path>' + '<path data-name="Path" d="M92,36.1a3.5,3.5,0,0,0-3.5,3.5V60.4a3.5,3.5,0,0,0,7,0V39.6A3.5,3.5,0,0,0,92,36.1Z"></path></g></svg>';
-
-var moveIcon = '<svg fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" ' + 'data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px">' + '<path d="M97.09,51.81c.05-.1.11-.2.16-.31a4,4,0,0,0,.14-.44c0-.1.06-.19.08-.29a4,4,0,0,0,.08-.75h0a4,4,0,' + '0,0-.08-.75c0-.1-.06-.2-.08-.29a4,4,0,0,0-.14-.44c0-.11-.1-.21-.16-.31a3.93,3.93,0,0,0-.2-.36c-.07-.11-.15' + '-.2-.23-.3s-.12-.17-.19-.25L83.72,33.52A4,4,0,0,0,77.85,39l6.53,7H61.27a4,4,0,0,0,0,8H84.38l-6.53,7a4,4,0,' + '0,0,5.87,5.44L96.48,52.72c.07-.08.12-.16.19-.25s.16-.2.23-.3A3.92,3.92,0,0,0,97.09,51.81Z"></path>' + '<path d="M2.91,48.19c-.05.1-.11.2-.16.31a4,4,0,0,0-.14.44c0,.1-.06.19-.08.29a4,4,0,0,0-.08.75h0a4,4,0,0,' + '0,.08.75c0,.1.06.2.08.29a3.94,3.94,0,0,0,.14.43c0,.11.1.21.16.31a3.92,3.92,0,0,0,.2.36c.07.11.15.2.23.3s' + '.12.17.19.25L16.28,66.48A4,4,0,0,0,22.15,61l-6.53-7H38.73a4,4,0,0,0,0-8H15.62l6.53-7a4,4,0,0,0-5.87-5.44L3.' + '52,47.28c-.07.08-.12.16-.19.25s-.16.2-.23.3A3.93,3.93,0,0,0,2.91,48.19Z"></path>' + '<path d="M66.69,78.07A4,4,0,0,0,61,77.85l-7,6.53V61.27a4,4,0,0,0-8,0V84.38l-7-6.53a4,4,0,1,0-5.44,5.87L47.' + '28,96.48c.08.07.16.12.24.18s.2.17.31.24a3.92,3.92,0,0,0,.36.2c.1.05.2.11.31.16a4,4,0,0,0,.44.14l.29.08a3.84,' + '3.84,0,0,0,1.53,0l.29-.08a4,4,0,0,0,.44-.14c.11,0,.21-.1.31-.16a3.89,3.89,0,0,0,.36-.2c.11-.07.21-.16.31-.24' + 's.16-.11.24-.18L66.48,83.72A4,4,0,0,0,66.69,78.07Z"></path>' + '<path d="M61,22.15a4,4,0,1,0,5.44-5.87L52.72,3.52c-.08-.07-.16-.12-.25-.19s-.2-.16-.3-.23a3.91,3.91,0,0' + ',0-.36-.2c-.1-.05-.2-.11-.31-.15a4,4,0,0,0-.44-.14l-.29-.08A4,4,0,0,0,50,2.46h0a4,4,0,0,0-.75.08l-.3.08' + 'a4,4,0,0,0-.43.13c-.11,0-.21.1-.32.16a3.93,3.93,0,0,0-.36.19c-.11.07-.21.15-.31.23s-.17.12-.24.19L33.52,' + '16.28A4,4,0,0,0,39,22.15l7-6.53V38.73a4,4,0,0,0,8,0V15.62Z"></path></svg>';
-
-var addIcon = '<svg fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" height="40" xmlns:xlink="http://www.w3.org/1999/xlink"\n' + 'version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="transition: all 0.2s;"\n' + 'xml:space="preserve"><g><path d="M50,7C26.3,7,7,26.3,7,50c0,23.7,19.3,43,43,43c23.7,0,43-19.3,43-43C93,26.3,73.7,7,' + '50,7z M50,87c-20.4,0-37-16.6-37-37   c0-20.4,16.6-37,37-37c20.4,0,37,16.6,37,37C87,70.4,70.4,87,50,87z"></path><path\n' + 'd="M67,47H53V33c0-1.7-1.3-3-3-3s-3,1.3-3,3v14H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h14v14c0,1.7,1.3,3,3,3s3-1.3,3-3V53h14  ' + ' c1.7,0,3-1.3,3-3S68.7,47,67,47z"></path></g></svg>';
-
-/***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -855,23 +1045,23 @@ var addIcon = '<svg fill="var(--primary)" xmlns="http://www.w3.org/2000/svg" hei
 });
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(13);
-module.exports = __webpack_require__(56);
+__webpack_require__(14);
+module.exports = __webpack_require__(69);
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_vimeo_player__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_vimeo_player__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_youtube__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_youtube__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_youtube___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_youtube__);
 
 
@@ -881,25 +1071,25 @@ Nova.booting(function (Vue, router) {
   Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_vimeo_player__["a" /* default */]);
   Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_carousel___default.a);
   Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_youtube___default.a);
-  Vue.component('index-PostContent', __webpack_require__(21));
-  Vue.component('detail-PostContent', __webpack_require__(24));
-  Vue.component('form-PostContent', __webpack_require__(50));
+  Vue.component('index-PostContent', __webpack_require__(34));
+  Vue.component('detail-PostContent', __webpack_require__(37));
+  Vue.component('form-PostContent', __webpack_require__(63));
 });
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export vueVimeoPlayer */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vimeo_player__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vimeo_player__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_object_assign__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_object_assign__);
 var pid=0;function emitVueEvent(e){var t=this;this.player.on(e,function(i){t.$emit(e,i,t.player)})}var eventsToEmit=["play","pause","ended","timeupdate","progress","seeked","texttrackchange","cuechange","cuepoint","volumechange","error","loaded"],vueVimeoPlayer={props:{playerHeight:{default:320},playerWidth:{default:640},options:{default:function(){return{}}},videoId:{required:!0},loop:{default:!1},autoplay:{default:!1}},render:function(e){return e("div",{attrs:{id:this.elementId}})},watch:{videoId:"update"},data:function(){return{elementId:"vimeo-player-"+(pid+=1),player:null}},methods:{update:function(e){return this.player.loadVideo(e)},play:function(){return this.player.play()},pause:function(){return this.player.pause()},mute:function(){return this.player.setVolume(0)},unmute:function(e){return void 0===e&&(e=.5),this.player.setVolume(e)},setEvents:function(){var e=this;this.player.ready().then(function(){e.$emit("ready",e.player)}).catch(function(t){e.$emit("error",t,e.player)}),eventsToEmit.forEach(function(t){return emitVueEvent.call(e,t)})}},mounted:function(){var e={id:this.videoId,width:this.playerWidth,height:this.playerHeight,loop:this.loop,autoplay:this.autoplay};this.player=new __WEBPACK_IMPORTED_MODULE_0__vimeo_player__["a" /* default */](this.elementId,__WEBPACK_IMPORTED_MODULE_1_object_assign___default()(e,this.options)),this.setEvents()},beforeDestroy:function(){this.player.unload()}};function plugin(e,t){e.component("vimeo-player",vueVimeoPlayer)}plugin.version="0.0.9","undefined"!=typeof window&&window.Vue&&window.Vue.use(plugin);/* harmony default export */ __webpack_exports__["a"] = (plugin);
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2914,10 +3104,10 @@ if (!isNode) {
 
 /* harmony default export */ __webpack_exports__["a"] = (Player);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3), __webpack_require__(16).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3), __webpack_require__(17).setImmediate))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -2973,7 +3163,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(17);
+__webpack_require__(18);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -2987,7 +3177,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -3177,197 +3367,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(18)))
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(8)))
 
 /***/ }),
 /* 19 */
@@ -3481,12 +3481,1407 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(global) {/*!
+ * vue-youtube v1.3.3
+ * (c) 2018 Antério Vieira
+ * Released under the MIT License.
+ */
+
+(function (global, factory) {
+	 true ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.VueYoutube = global.VueYoutube || {})));
+}(this, (function (exports) { 'use strict';
+
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+
+
+
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var getYoutubeId = createCommonjsModule(function (module, exports) {
+(function (root, factory) {
+  {
+    module.exports = factory();
+  }
+}(commonjsGlobal, function (exports) {
+
+  return function (url, opts) {
+    if (opts == undefined) {
+      opts = {fuzzy: true};
+    }
+
+    if (/youtu\.?be/.test(url)) {
+
+      // Look first for known patterns
+      var i;
+      var patterns = [
+        /youtu\.be\/([^#\&\?]{11})/,  // youtu.be/<id>
+        /\?v=([^#\&\?]{11})/,         // ?v=<id>
+        /\&v=([^#\&\?]{11})/,         // &v=<id>
+        /embed\/([^#\&\?]{11})/,      // embed/<id>
+        /\/v\/([^#\&\?]{11})/         // /v/<id>
+      ];
+
+      // If any pattern matches, return the ID
+      for (i = 0; i < patterns.length; ++i) {
+        if (patterns[i].test(url)) {
+          return patterns[i].exec(url)[1];
+        }
+      }
+
+      if (opts.fuzzy) {
+        // If that fails, break it apart by certain characters and look
+        // for the 11 character key
+        var tokens = url.split(/[\/\&\?=#\.\s]/g);
+        for (i = 0; i < tokens.length; ++i) {
+          if (/^[^#\&\?]{11}$/.test(tokens[i])) {
+            return tokens[i];
+          }
+        }
+      }
+    }
+
+    return null;
+  };
+
+}));
+});
+
+var player = __webpack_require__(22);
+
+var UNSTARTED = -1;
+var ENDED = 0;
+var PLAYING = 1;
+var PAUSED = 2;
+var BUFFERING = 3;
+var CUED = 5;
+
+var Youtube = {
+  name: 'Youtube',
+  props: {
+    videoId: String,
+    playerVars: {
+      type: Object,
+      default: function () { return ({}); }
+    },
+    height: {
+      type: [Number, String],
+      default: 360
+    },
+    width: {
+      type: [Number, String],
+      default: 640
+    },
+    resize: {
+      type: Boolean,
+      default: false
+    },
+    resizeDelay: {
+      type: Number,
+      default: 100
+    },
+    fitParent: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data: function data () {
+    return {
+      player: {},
+      events: ( obj = {}, obj[UNSTARTED] = 'unstarted', obj[PLAYING] = 'playing', obj[PAUSED] = 'paused', obj[ENDED] = 'ended', obj[BUFFERING] = 'buffering', obj[CUED] = 'cued', obj ),
+      resizeTimeout: null
+    }
+    var obj;
+  },
+  computed: {
+    aspectRatio: function aspectRatio () {
+      return this.width / this.height
+    }
+  },
+  methods: {
+    playerReady: function playerReady (e) {
+      this.$emit('ready', e.target);
+    },
+    playerStateChange: function playerStateChange (e) {
+      if (e.data !== null && e.data !== UNSTARTED) {
+        this.$emit(this.events[e.data], e.target);
+      }
+    },
+    playerError: function playerError (e) {
+      this.$emit('error', e.target);
+    },
+    updatePlayer: function updatePlayer (videoId) {
+      if (!videoId) {
+        this.player.stopVideo();
+        return
+      }
+
+      if (this.playerVars.autoplay === 1) {
+        this.player.loadVideoById({ videoId: videoId });
+        return
+      }
+
+      this.player.cueVideoById({ videoId: videoId });
+    },
+    resizeProportionally: function resizeProportionally () {
+      var this$1 = this;
+
+      this.player.getIframe().then(function (iframe) {
+        var width = this$1.fitParent
+          ? iframe.parentElement.offsetWidth
+          : iframe.offsetWidth;
+        var height = width / this$1.aspectRatio;
+        this$1.player.setSize(width, height);
+      });
+    },
+    onResize: function onResize () {
+      clearTimeout(this.resizeTimeout);
+      this.resizeTimeout = setTimeout(
+        this.resizeProportionally,
+        this.resizeDelay
+      );
+    }
+  },
+  watch: {
+    videoId: 'updatePlayer',
+    resize: function resize (val) {
+      if (val) {
+        window.addEventListener('resize', this.onResize);
+        this.resizeProportionally();
+      } else {
+        window.removeEventListener('resize', this.onResize);
+        this.player.setSize(this.width, this.height);
+      }
+    },
+    width: function width (val) {
+      this.player.setSize(val, this.height);
+    },
+    height: function height (val) {
+      this.player.setSize(this.width, val);
+    }
+  },
+  beforeDestroy: function beforeDestroy () {
+    if (this.player !== null && this.player.destroy) {
+      this.player.destroy();
+      delete this.player;
+    }
+  },
+  mounted: function mounted () {
+    window.YTConfig = {
+      host: 'https://www.youtube.com'
+    };
+
+    this.player = player(this.$el, {
+      width: this.width,
+      height: this.height,
+      videoId: this.videoId,
+      playerVars: this.playerVars
+    });
+
+    this.player.on('ready', this.playerReady);
+    this.player.on('stateChange', this.playerStateChange);
+    this.player.on('error', this.playerError);
+
+    if (this.resize) {
+      window.addEventListener('resize', this.onResize);
+    }
+
+    if (this.fitParent) {
+      this.resizeProportionally();
+    }
+  },
+  render: function render (h) {
+    return h('div')
+  }
+};
+
+function plugin (Vue) {
+  Vue.prototype.$youtube = {
+    getIdFromUrl: getYoutubeId
+  };
+
+  Vue.component('youtube', Youtube);
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(plugin);
+}
+
+var version = '1.3.3';
+
+exports['default'] = plugin;
+exports.Youtube = Youtube;
+exports.version = version;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _sister = __webpack_require__(23);
+
+var _sister2 = _interopRequireDefault(_sister);
+
+var _loadYouTubeIframeApi = __webpack_require__(24);
+
+var _loadYouTubeIframeApi2 = _interopRequireDefault(_loadYouTubeIframeApi);
+
+var _YouTubePlayer = __webpack_require__(26);
+
+var _YouTubePlayer2 = _interopRequireDefault(_YouTubePlayer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @typedef YT.Player
+ * @see https://developers.google.com/youtube/iframe_api_reference
+ * */
+
+/**
+ * @see https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player
+ */
+var youtubeIframeAPI = void 0;
+
+/**
+ * A factory function used to produce an instance of YT.Player and queue function calls and proxy events of the resulting object.
+ *
+ * @param elementId Either An existing YT.Player instance,
+ * the DOM element or the id of the HTML element where the API will insert an <iframe>.
+ * @param options See `options` (Ignored when using an existing YT.Player instance).
+ * @param strictState A flag designating whether or not to wait for
+ * an acceptable state when calling supported functions. Default: `false`.
+ * See `FunctionStateMap.js` for supported functions and acceptable states.
+ */
+
+exports.default = function (maybeElementId) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var strictState = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var emitter = (0, _sister2.default)();
+
+  if (!youtubeIframeAPI) {
+    youtubeIframeAPI = (0, _loadYouTubeIframeApi2.default)(emitter);
+  }
+
+  if (options.events) {
+    throw new Error('Event handlers cannot be overwritten.');
+  }
+
+  if (typeof maybeElementId === 'string' && !document.getElementById(maybeElementId)) {
+    throw new Error('Element "' + maybeElementId + '" does not exist.');
+  }
+
+  options.events = _YouTubePlayer2.default.proxyEvents(emitter);
+
+  var playerAPIReady = new Promise(function (resolve) {
+    if (typeof maybeElementId === 'string' || maybeElementId instanceof HTMLElement) {
+      // eslint-disable-next-line promise/catch-or-return
+      youtubeIframeAPI.then(function (YT) {
+        var player = new YT.Player(maybeElementId, options);
+
+        emitter.on('ready', function () {
+          resolve(player);
+        });
+
+        return null;
+      });
+    } else if ((typeof maybeElementId === 'undefined' ? 'undefined' : _typeof(maybeElementId)) === 'object' && maybeElementId.playVideo instanceof Function) {
+      var player = maybeElementId;
+
+      resolve(player);
+    } else {
+      throw new TypeError('Unexpected state.');
+    }
+  });
+
+  var playerApi = _YouTubePlayer2.default.promisifyPlayer(playerAPIReady, strictState);
+
+  playerApi.on = emitter.on;
+  playerApi.off = emitter.off;
+
+  return playerApi;
+};
+
+module.exports = exports['default'];
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var Sister;
+
+/**
+* @link https://github.com/gajus/sister for the canonical source repository
+* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
+*/
+Sister = function () {
+    var sister = {},
+        events = {};
+
+    /**
+     * @name handler
+     * @function
+     * @param {Object} data Event data.
+     */
+
+    /**
+     * @param {String} name Event name.
+     * @param {handler} handler
+     * @return {listener}
+     */
+    sister.on = function (name, handler) {
+        var listener = {name: name, handler: handler};
+        events[name] = events[name] || [];
+        events[name].unshift(listener);
+        return listener;
+    };
+
+    /**
+     * @param {listener}
+     */
+    sister.off = function (listener) {
+        var index = events[listener.name].indexOf(listener);
+
+        if (index !== -1) {
+            events[listener.name].splice(index, 1);
+        }
+    };
+
+    /**
+     * @param {String} name Event name.
+     * @param {Object} data Event data.
+     */
+    sister.trigger = function (name, data) {
+        var listeners = events[name],
+            i;
+
+        if (listeners) {
+            i = listeners.length;
+            while (i--) {
+                listeners[i].handler(data);
+            }
+        }
+    };
+
+    return sister;
+};
+
+module.exports = Sister;
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _loadScript = __webpack_require__(25);
+
+var _loadScript2 = _interopRequireDefault(_loadScript);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (emitter) {
+  /**
+   * A promise that is resolved when window.onYouTubeIframeAPIReady is called.
+   * The promise is resolved with a reference to window.YT object.
+   */
+  var iframeAPIReady = new Promise(function (resolve) {
+    if (window.YT && window.YT.Player && window.YT.Player instanceof Function) {
+      resolve(window.YT);
+
+      return;
+    } else {
+      var protocol = window.location.protocol === 'http:' ? 'http:' : 'https:';
+
+      (0, _loadScript2.default)(protocol + '//www.youtube.com/iframe_api', function (error) {
+        if (error) {
+          emitter.trigger('error', error);
+        }
+      });
+    }
+
+    var previous = window.onYouTubeIframeAPIReady;
+
+    // The API will call this function when page has finished downloading
+    // the JavaScript for the player API.
+    window.onYouTubeIframeAPIReady = function () {
+      if (previous) {
+        previous();
+      }
+
+      resolve(window.YT);
+    };
+  });
+
+  return iframeAPIReady;
+};
+
+module.exports = exports['default'];
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports) {
+
+
+module.exports = function load (src, opts, cb) {
+  var head = document.head || document.getElementsByTagName('head')[0]
+  var script = document.createElement('script')
+
+  if (typeof opts === 'function') {
+    cb = opts
+    opts = {}
+  }
+
+  opts = opts || {}
+  cb = cb || function() {}
+
+  script.type = opts.type || 'text/javascript'
+  script.charset = opts.charset || 'utf8';
+  script.async = 'async' in opts ? !!opts.async : true
+  script.src = src
+
+  if (opts.attrs) {
+    setAttributes(script, opts.attrs)
+  }
+
+  if (opts.text) {
+    script.text = '' + opts.text
+  }
+
+  var onend = 'onload' in script ? stdOnEnd : ieOnEnd
+  onend(script, cb)
+
+  // some good legacy browsers (firefox) fail the 'in' detection above
+  // so as a fallback we always set onload
+  // old IE will ignore this and new IE will set onload
+  if (!script.onload) {
+    stdOnEnd(script, cb);
+  }
+
+  head.appendChild(script)
+}
+
+function setAttributes(script, attrs) {
+  for (var attr in attrs) {
+    script.setAttribute(attr, attrs[attr]);
+  }
+}
+
+function stdOnEnd (script, cb) {
+  script.onload = function () {
+    this.onerror = this.onload = null
+    cb(null, script)
+  }
+  script.onerror = function () {
+    // this.onload = null here is necessary
+    // because even IE9 works not like others
+    this.onerror = this.onload = null
+    cb(new Error('Failed to load ' + this.src), script)
+  }
+}
+
+function ieOnEnd (script, cb) {
+  script.onreadystatechange = function () {
+    if (this.readyState != 'complete' && this.readyState != 'loaded') return
+    this.onreadystatechange = null
+    cb(null, script) // there is no way to catch loading errors in IE8
+  }
+}
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _debug = __webpack_require__(27);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _functionNames = __webpack_require__(30);
+
+var _functionNames2 = _interopRequireDefault(_functionNames);
+
+var _eventNames = __webpack_require__(31);
+
+var _eventNames2 = _interopRequireDefault(_eventNames);
+
+var _FunctionStateMap = __webpack_require__(32);
+
+var _FunctionStateMap2 = _interopRequireDefault(_FunctionStateMap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var debug = (0, _debug2.default)('youtube-player');
+
+var YouTubePlayer = {};
+
+/**
+ * Construct an object that defines an event handler for all of the YouTube
+ * player events. Proxy captured events through an event emitter.
+ *
+ * @todo Capture event parameters.
+ * @see https://developers.google.com/youtube/iframe_api_reference#Events
+ */
+YouTubePlayer.proxyEvents = function (emitter) {
+  var events = {};
+
+  var _loop = function _loop(eventName) {
+    var onEventName = 'on' + eventName.slice(0, 1).toUpperCase() + eventName.slice(1);
+
+    events[onEventName] = function (event) {
+      debug('event "%s"', onEventName, event);
+
+      emitter.trigger(eventName, event);
+    };
+  };
+
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = _eventNames2.default[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var eventName = _step.value;
+
+      _loop(eventName);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return events;
+};
+
+/**
+ * Delays player API method execution until player state is ready.
+ *
+ * @todo Proxy all of the methods using Object.keys.
+ * @todo See TRICKY below.
+ * @param playerAPIReady Promise that resolves when player is ready.
+ * @param strictState A flag designating whether or not to wait for
+ * an acceptable state when calling supported functions.
+ * @returns {Object}
+ */
+YouTubePlayer.promisifyPlayer = function (playerAPIReady) {
+  var strictState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var functions = {};
+
+  var _loop2 = function _loop2(functionName) {
+    if (strictState && _FunctionStateMap2.default[functionName]) {
+      functions[functionName] = function () {
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+
+        return playerAPIReady.then(function (player) {
+          var stateInfo = _FunctionStateMap2.default[functionName];
+          var playerState = player.getPlayerState();
+
+          // eslint-disable-next-line no-warning-comments
+          // TODO: Just spread the args into the function once Babel is fixed:
+          // https://github.com/babel/babel/issues/4270
+          //
+          // eslint-disable-next-line prefer-spread
+          var value = player[functionName].apply(player, args);
+
+          // TRICKY: For functions like `seekTo`, a change in state must be
+          // triggered given that the resulting state could match the initial
+          // state.
+          if (stateInfo.stateChangeRequired ||
+
+          // eslint-disable-next-line no-extra-parens
+          Array.isArray(stateInfo.acceptableStates) && stateInfo.acceptableStates.indexOf(playerState) === -1) {
+            return new Promise(function (resolve) {
+              var onPlayerStateChange = function onPlayerStateChange() {
+                var playerStateAfterChange = player.getPlayerState();
+
+                var timeout = void 0;
+
+                if (typeof stateInfo.timeout === 'number') {
+                  timeout = setTimeout(function () {
+                    player.removeEventListener('onStateChange', onPlayerStateChange);
+
+                    resolve();
+                  }, stateInfo.timeout);
+                }
+
+                if (Array.isArray(stateInfo.acceptableStates) && stateInfo.acceptableStates.indexOf(playerStateAfterChange) !== -1) {
+                  player.removeEventListener('onStateChange', onPlayerStateChange);
+
+                  clearTimeout(timeout);
+
+                  resolve();
+                }
+              };
+
+              player.addEventListener('onStateChange', onPlayerStateChange);
+            }).then(function () {
+              return value;
+            });
+          }
+
+          return value;
+        });
+      };
+    } else {
+      functions[functionName] = function () {
+        for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+          args[_key2] = arguments[_key2];
+        }
+
+        return playerAPIReady.then(function (player) {
+          // eslint-disable-next-line no-warning-comments
+          // TODO: Just spread the args into the function once Babel is fixed:
+          // https://github.com/babel/babel/issues/4270
+          //
+          // eslint-disable-next-line prefer-spread
+          return player[functionName].apply(player, args);
+        });
+      };
+    }
+  };
+
+  var _iteratorNormalCompletion2 = true;
+  var _didIteratorError2 = false;
+  var _iteratorError2 = undefined;
+
+  try {
+    for (var _iterator2 = _functionNames2.default[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var functionName = _step2.value;
+
+      _loop2(functionName);
+    }
+  } catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+        _iterator2.return();
+      }
+    } finally {
+      if (_didIteratorError2) {
+        throw _iteratorError2;
+      }
+    }
+  }
+
+  return functions;
+};
+
+exports.default = YouTubePlayer;
+module.exports = exports['default'];
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(28);
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  'lightseagreen',
+  'forestgreen',
+  'goldenrod',
+  'dodgerblue',
+  'darkorchid',
+  'crimson'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = Object({"NODE_ENV":"development"}).DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(29);
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Previous log timestamp.
+ */
+
+var prevTime;
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  return debug;
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (var i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  if (ms >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (ms >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (ms >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (ms >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  return plural(ms, d, 'day') ||
+    plural(ms, h, 'hour') ||
+    plural(ms, m, 'minute') ||
+    plural(ms, s, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+/**
+ * @see https://developers.google.com/youtube/iframe_api_reference#Functions
+ */
+exports.default = ['cueVideoById', 'loadVideoById', 'cueVideoByUrl', 'loadVideoByUrl', 'playVideo', 'pauseVideo', 'stopVideo', 'getVideoLoadedFraction', 'cuePlaylist', 'loadPlaylist', 'nextVideo', 'previousVideo', 'playVideoAt', 'setShuffle', 'setLoop', 'getPlaylist', 'getPlaylistIndex', 'setOption', 'mute', 'unMute', 'isMuted', 'setVolume', 'getVolume', 'seekTo', 'getPlayerState', 'getPlaybackRate', 'setPlaybackRate', 'getAvailablePlaybackRates', 'getPlaybackQuality', 'setPlaybackQuality', 'getAvailableQualityLevels', 'getCurrentTime', 'getDuration', 'removeEventListener', 'getVideoUrl', 'getVideoEmbedCode', 'getOptions', 'getOption', 'addEventListener', 'destroy', 'setSize', 'getIframe'];
+module.exports = exports['default'];
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+/**
+ * @see https://developers.google.com/youtube/iframe_api_reference#Events
+ * `volumeChange` is not officially supported but seems to work
+ * it emits an object: `{volume: 82.6923076923077, muted: false}`
+ */
+exports.default = ['ready', 'stateChange', 'playbackQualityChange', 'playbackRateChange', 'error', 'apiChange', 'volumeChange'];
+module.exports = exports['default'];
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _PlayerStates = __webpack_require__(33);
+
+var _PlayerStates2 = _interopRequireDefault(_PlayerStates);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  pauseVideo: {
+    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PAUSED],
+    stateChangeRequired: false
+  },
+  playVideo: {
+    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PLAYING],
+    stateChangeRequired: false
+  },
+  seekTo: {
+    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PLAYING, _PlayerStates2.default.PAUSED],
+    stateChangeRequired: true,
+
+    // TRICKY: `seekTo` may not cause a state change if no buffering is
+    // required.
+    timeout: 3000
+  }
+};
+module.exports = exports['default'];
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  BUFFERING: 3,
+  ENDED: 0,
+  PAUSED: 2,
+  PLAYING: 1,
+  UNSTARTED: -1,
+  VIDEO_CUED: 5
+};
+module.exports = exports["default"];
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(22)
+var __vue_script__ = __webpack_require__(35)
 /* template */
-var __vue_template__ = __webpack_require__(23)
+var __vue_template__ = __webpack_require__(36)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -3525,7 +4920,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 22 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3540,7 +4935,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 23 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3560,15 +4955,15 @@ if (false) {
 }
 
 /***/ }),
-/* 24 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(25)
+var __vue_script__ = __webpack_require__(38)
 /* template */
-var __vue_template__ = __webpack_require__(49)
+var __vue_template__ = __webpack_require__(62)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -3607,7 +5002,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 25 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3616,11 +5011,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RowFields_Fields_RowImageField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__RowFields_Fields_RowImageField__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowFields_Fields_RowVideoField__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowFields_Fields_RowVideoField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__RowFields_Fields_RowVideoField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowFields_Fields_RowCarouselField__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowFields_Fields_RowCarouselField__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowFields_Fields_RowCarouselField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__RowFields_Fields_RowCarouselField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RowFields_RowContainer__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RowFields_RowContainer__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RowFields_RowContainer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__RowFields_RowContainer__);
 //
 //
@@ -3684,13 +5079,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 26 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(27);
+var content = __webpack_require__(40);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3710,7 +5105,7 @@ if(false) {
 }
 
 /***/ }),
-/* 27 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -3724,7 +5119,7 @@ exports.push([module.i, "\n.row-image-field-container[data-v-eabfebec] {\n  marg
 
 
 /***/ }),
-/* 28 */
+/* 41 */
 /***/ (function(module, exports) {
 
 /**
@@ -3757,7 +5152,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 29 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3827,7 +5222,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 30 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3892,13 +5287,13 @@ if (false) {
 }
 
 /***/ }),
-/* 31 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(32);
+var content = __webpack_require__(45);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3918,7 +5313,7 @@ if(false) {
 }
 
 /***/ }),
-/* 32 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -3932,7 +5327,7 @@ exports.push([module.i, "\n.row-video-field-container[data-v-7dfdba2c] {\n  marg
 
 
 /***/ }),
-/* 33 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3977,6 +5372,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       required: false,
       default: function _default() {
         return '';
+      }
+    },
+    inSlide: {
+      type: Boolean,
+      required: false,
+      default: function _default() {
+        return false;
       }
     },
     readonly: {
@@ -4033,7 +5435,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 34 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4093,7 +5495,7 @@ var render = function() {
                       title: "0",
                       byline: "0",
                       portrait: "0",
-                      width: "100%"
+                      width: _vm.inSlide ? "440" : "500"
                     }
                   }
                 })
@@ -4120,7 +5522,7 @@ if (false) {
 }
 
 /***/ }),
-/* 35 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4191,7 +5593,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 36 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4221,13 +5623,13 @@ if (false) {
 }
 
 /***/ }),
-/* 37 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(38);
+var content = __webpack_require__(51);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -4247,7 +5649,7 @@ if(false) {
 }
 
 /***/ }),
-/* 38 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -4261,7 +5663,7 @@ exports.push([module.i, "\n.row-carousel-field-container[data-v-7315ad9f] {\n  p
 
 
 /***/ }),
-/* 39 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4270,11 +5672,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RowImageField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__RowImageField__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowVideoField__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowVideoField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__RowVideoField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__AddRow__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__AddRow__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__AddRow___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__AddRow__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowContainer__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowContainer__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowContainer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__RowContainer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_Miscellaneous__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mixins_Miscellaneous__ = __webpack_require__(12);
+//
+//
 //
 //
 //
@@ -4471,13 +5875,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 40 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(41);
+var content = __webpack_require__(54);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -4497,7 +5901,7 @@ if(false) {
 }
 
 /***/ }),
-/* 41 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -4511,12 +5915,12 @@ exports.push([module.i, "\n.add-hoverable[data-v-756c4de0] {\n  -webkit-transiti
 
 
 /***/ }),
-/* 42 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_icons__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_icons__ = __webpack_require__(6);
 //
 //
 //
@@ -4609,7 +6013,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 43 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4708,13 +6112,13 @@ if (false) {
 }
 
 /***/ }),
-/* 44 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(45);
+var content = __webpack_require__(58);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -4734,7 +6138,7 @@ if(false) {
 }
 
 /***/ }),
-/* 45 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -4742,18 +6146,24 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.row-container[data-v-15732424] {\n  border-bottom: solid 1px #ccc;\n  padding: 25px 1%;\n  position: relative;\n  width: 102%;\n  border-radius: 4px;\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.row-container-slide[data-v-15732424] {\n  border-bottom: none;\n  width: 100% !important;\n}\n.delete-hoverable[data-v-15732424] {\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n  background-color: var(--white);\n  color: #ff0000;\n}\n.delete-hoverable[data-v-15732424]:hover {\n  cursor: pointer;\n}\n.delete-icon[data-v-15732424] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translate(100%, -50%);\n  transform: translate(100%, -50%);\n  right: -15px;\n}\n.delete-icon-copy[data-v-15732424] {\n  border: solid 1px #ff0000;\n  border-radius: 25px;\n}\n.confirm-delete-icon[data-v-15732424], .cancel-delete-icon[data-v-15732424] {\n  border: solid 1px;\n  border-radius: 25px;\n}\n.confirm-delete-icon[data-v-15732424] {\n  color: #ff0000;\n  border-color: #ff0000;\n}\n.cancel-delete-icon[data-v-15732424] {\n  color: #aaa;\n  border-color: #aaa;\n}\n.move-icon[data-v-15732424] {\n  position: absolute;\n  left: -40px;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  transform: translate(0, -50%);\n}\n.move-icon svg[data-v-15732424] {\n  height: 25px;\n}\n.move-icon[data-v-15732424]:hover {\n  cursor: pointer;\n}\n.fade-enter-active[data-v-15732424], .fade-leave-active[data-v-15732424] {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter[data-v-15732424], .fade-leave-to[data-v-15732424] /* .fade-leave-active below version 2.1.8 */\n{\n  opacity: 0;\n}\n\n", ""]);
+exports.push([module.i, "\n.row-container[data-v-15732424] {\n  border-bottom: solid 1px #ccc;\n  padding: 25px 1%;\n  position: relative;\n  width: 102%;\n  border-radius: 4px;\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.row-container-slide[data-v-15732424] {\n  border-bottom: none;\n  width: 100% !important;\n}\n.delete-hoverable[data-v-15732424] {\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n  background-color: var(--white);\n  color: #ff0000;\n}\n.delete-hoverable[data-v-15732424]:hover {\n  cursor: pointer;\n}\n.delete-icon[data-v-15732424] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translate(100%, -50%);\n  transform: translate(100%, -50%);\n  right: -15px;\n}\n.delete-icon-copy[data-v-15732424] {\n  border: solid 2px #ff0000;\n  border-radius: 25px;\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.delete-icon-copy[data-v-15732424]:hover {\n  background-color: #ff0000;\n}\n.delete-icon-copy svg[data-v-15732424] {\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.delete-icon-copy:hover svg[data-v-15732424] {\n  stroke: #fff;\n}\n.confirm-delete-icon[data-v-15732424], .cancel-delete-icon[data-v-15732424] {\n  border: solid 2px;\n  border-radius: 25px;\n}\n.confirm-delete-icon[data-v-15732424] {\n  color: #ff0000;\n  border-color: #ff0000;\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.confirm-delete-icon[data-v-15732424]:hover {\n  background-color: #ff0000;\n}\n.confirm-delete-icon svg[data-v-15732424] {\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.confirm-delete-icon:hover svg[data-v-15732424] {\n  stroke: #fff;\n}\n.cancel-delete-icon[data-v-15732424] {\n  color: #aaa;\n  border-color: #aaa;\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.cancel-delete-icon[data-v-15732424]:hover {\n  background-color: #aaa;\n}\n.cancel-delete-icon svg[data-v-15732424] {\n  -webkit-transition: all 0.2s;\n  transition: all 0.2s;\n}\n.cancel-delete-icon:hover svg[data-v-15732424] {\n  stroke: #fff;\n}\n.move-icon[data-v-15732424] {\n  position: absolute;\n  left: -40px;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  transform: translate(0, -50%);\n}\n.move-icon svg[data-v-15732424] {\n  height: 25px;\n}\n.move-icon[data-v-15732424]:hover {\n  cursor: pointer;\n}\n.fade-enter-active[data-v-15732424], .fade-leave-active[data-v-15732424] {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s;\n}\n.fade-enter[data-v-15732424], .fade-leave-to[data-v-15732424] /* .fade-leave-active below version 2.1.8 */\n{\n  opacity: 0;\n}\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 46 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_icons__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_icons__ = __webpack_require__(6);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4870,7 +6280,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 47 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -4921,10 +6331,28 @@ var render = function() {
                         on: { click: _vm.attemptDelete }
                       },
                       [
-                        _vm._v(
-                          "\n        Delete " +
-                            _vm._s(_vm.inSlide ? "Slide" : "Row") +
-                            "\n      "
+                        _c(
+                          "svg",
+                          {
+                            staticStyle: { width: "20px", height: "24px" },
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor"
+                            }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                "stroke-width": "2",
+                                d:
+                                  "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                              }
+                            })
+                          ]
                         )
                       ]
                     )
@@ -4944,7 +6372,30 @@ var render = function() {
                             staticClass: "confirm-delete-icon my-1 px-2 py-1",
                             on: { click: _vm.handleDelete }
                           },
-                          [_vm._v("\n          Confirm Delete\n        ")]
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticStyle: { width: "20px", height: "24px" },
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor"
+                                }
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M5 13l4 4L19 7"
+                                  }
+                                })
+                              ]
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -4953,7 +6404,30 @@ var render = function() {
                             staticClass: "cancel-delete-icon my-1 px-2 py-1",
                             on: { click: _vm.cancelDelete }
                           },
-                          [_vm._v("\n          Cancel\n        ")]
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticStyle: { width: "20px", height: "24px" },
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor"
+                                }
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M6 18L18 6M6 6l12 12"
+                                  }
+                                })
+                              ]
+                            )
+                          ]
                         )
                       ]
                     )
@@ -4977,7 +6451,7 @@ if (false) {
 }
 
 /***/ }),
-/* 48 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -5038,7 +6512,8 @@ var render = function() {
                               attrs: {
                                 value: slide.value,
                                 id: slide.id,
-                                readonly: _vm.readonly
+                                readonly: _vm.readonly,
+                                "in-slide": true
                               },
                               on: { fieldUpdated: _vm.handleFieldUpdate }
                             })
@@ -5091,7 +6566,8 @@ var render = function() {
                               attrs: {
                                 value: tempSlide.value,
                                 id: tempSlide.id,
-                                readonly: _vm.readonly
+                                readonly: _vm.readonly,
+                                "in-slide": true
                               },
                               on: { fieldUpdated: _vm.handleFieldUpdate }
                             })
@@ -5137,7 +6613,7 @@ if (false) {
 }
 
 /***/ }),
-/* 49 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -5205,15 +6681,15 @@ if (false) {
 }
 
 /***/ }),
-/* 50 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(51)
+var __vue_script__ = __webpack_require__(64)
 /* template */
-var __vue_template__ = __webpack_require__(55)
+var __vue_template__ = __webpack_require__(68)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -5252,29 +6728,29 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 51 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowFields_RowContainer__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowFields_RowContainer__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RowFields_RowContainer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__RowFields_RowContainer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__RowFields_Fields_RowTextField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowFields_AddRow__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowFields_AddRow__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RowFields_AddRow___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__RowFields_AddRow__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RowFields_Fields_RowVideoField__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RowFields_Fields_RowVideoField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__RowFields_Fields_RowVideoField__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RowFields_Fields_RowImageField__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RowFields_Fields_RowImageField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__RowFields_Fields_RowImageField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RowFields_Fields_RowCarouselField__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RowFields_Fields_RowCarouselField__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RowFields_Fields_RowCarouselField___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__RowFields_Fields_RowCarouselField__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vuedraggable__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vuedraggable__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vuedraggable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vuedraggable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mixins_Miscellaneous__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_icons__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mixins_Miscellaneous__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_icons__ = __webpack_require__(6);
 //
 //
 //
@@ -5471,7 +6947,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 52 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -15664,7 +17140,7 @@ module.exports = g;
 });
 
 /***/ }),
-/* 53 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16084,7 +17560,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   }
 
   if (true) {
-    var Sortable = __webpack_require__(54);
+    var Sortable = __webpack_require__(67);
     module.exports = buildDraggable(Sortable);
   } else if (typeof define == "function" && define.amd) {
     define(['sortablejs'], function (Sortable) {
@@ -16097,7 +17573,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 })();
 
 /***/ }),
-/* 54 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
@@ -17647,7 +19123,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
 
 
 /***/ }),
-/* 55 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -17767,1408 +19243,10 @@ if (false) {
 }
 
 /***/ }),
-/* 56 */
+/* 69 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {/*!
- * vue-youtube v1.3.3
- * (c) 2018 Antério Vieira
- * Released under the MIT License.
- */
-
-(function (global, factory) {
-	 true ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.VueYoutube = global.VueYoutube || {})));
-}(this, (function (exports) { 'use strict';
-
-var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
-
-
-
-
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var getYoutubeId = createCommonjsModule(function (module, exports) {
-(function (root, factory) {
-  {
-    module.exports = factory();
-  }
-}(commonjsGlobal, function (exports) {
-
-  return function (url, opts) {
-    if (opts == undefined) {
-      opts = {fuzzy: true};
-    }
-
-    if (/youtu\.?be/.test(url)) {
-
-      // Look first for known patterns
-      var i;
-      var patterns = [
-        /youtu\.be\/([^#\&\?]{11})/,  // youtu.be/<id>
-        /\?v=([^#\&\?]{11})/,         // ?v=<id>
-        /\&v=([^#\&\?]{11})/,         // &v=<id>
-        /embed\/([^#\&\?]{11})/,      // embed/<id>
-        /\/v\/([^#\&\?]{11})/         // /v/<id>
-      ];
-
-      // If any pattern matches, return the ID
-      for (i = 0; i < patterns.length; ++i) {
-        if (patterns[i].test(url)) {
-          return patterns[i].exec(url)[1];
-        }
-      }
-
-      if (opts.fuzzy) {
-        // If that fails, break it apart by certain characters and look
-        // for the 11 character key
-        var tokens = url.split(/[\/\&\?=#\.\s]/g);
-        for (i = 0; i < tokens.length; ++i) {
-          if (/^[^#\&\?]{11}$/.test(tokens[i])) {
-            return tokens[i];
-          }
-        }
-      }
-    }
-
-    return null;
-  };
-
-}));
-});
-
-var player = __webpack_require__(61);
-
-var UNSTARTED = -1;
-var ENDED = 0;
-var PLAYING = 1;
-var PAUSED = 2;
-var BUFFERING = 3;
-var CUED = 5;
-
-var Youtube = {
-  name: 'Youtube',
-  props: {
-    videoId: String,
-    playerVars: {
-      type: Object,
-      default: function () { return ({}); }
-    },
-    height: {
-      type: [Number, String],
-      default: 360
-    },
-    width: {
-      type: [Number, String],
-      default: 640
-    },
-    resize: {
-      type: Boolean,
-      default: false
-    },
-    resizeDelay: {
-      type: Number,
-      default: 100
-    },
-    fitParent: {
-      type: Boolean,
-      default: false
-    }
-  },
-  data: function data () {
-    return {
-      player: {},
-      events: ( obj = {}, obj[UNSTARTED] = 'unstarted', obj[PLAYING] = 'playing', obj[PAUSED] = 'paused', obj[ENDED] = 'ended', obj[BUFFERING] = 'buffering', obj[CUED] = 'cued', obj ),
-      resizeTimeout: null
-    }
-    var obj;
-  },
-  computed: {
-    aspectRatio: function aspectRatio () {
-      return this.width / this.height
-    }
-  },
-  methods: {
-    playerReady: function playerReady (e) {
-      this.$emit('ready', e.target);
-    },
-    playerStateChange: function playerStateChange (e) {
-      if (e.data !== null && e.data !== UNSTARTED) {
-        this.$emit(this.events[e.data], e.target);
-      }
-    },
-    playerError: function playerError (e) {
-      this.$emit('error', e.target);
-    },
-    updatePlayer: function updatePlayer (videoId) {
-      if (!videoId) {
-        this.player.stopVideo();
-        return
-      }
-
-      if (this.playerVars.autoplay === 1) {
-        this.player.loadVideoById({ videoId: videoId });
-        return
-      }
-
-      this.player.cueVideoById({ videoId: videoId });
-    },
-    resizeProportionally: function resizeProportionally () {
-      var this$1 = this;
-
-      this.player.getIframe().then(function (iframe) {
-        var width = this$1.fitParent
-          ? iframe.parentElement.offsetWidth
-          : iframe.offsetWidth;
-        var height = width / this$1.aspectRatio;
-        this$1.player.setSize(width, height);
-      });
-    },
-    onResize: function onResize () {
-      clearTimeout(this.resizeTimeout);
-      this.resizeTimeout = setTimeout(
-        this.resizeProportionally,
-        this.resizeDelay
-      );
-    }
-  },
-  watch: {
-    videoId: 'updatePlayer',
-    resize: function resize (val) {
-      if (val) {
-        window.addEventListener('resize', this.onResize);
-        this.resizeProportionally();
-      } else {
-        window.removeEventListener('resize', this.onResize);
-        this.player.setSize(this.width, this.height);
-      }
-    },
-    width: function width (val) {
-      this.player.setSize(val, this.height);
-    },
-    height: function height (val) {
-      this.player.setSize(this.width, val);
-    }
-  },
-  beforeDestroy: function beforeDestroy () {
-    if (this.player !== null && this.player.destroy) {
-      this.player.destroy();
-      delete this.player;
-    }
-  },
-  mounted: function mounted () {
-    window.YTConfig = {
-      host: 'https://www.youtube.com'
-    };
-
-    this.player = player(this.$el, {
-      width: this.width,
-      height: this.height,
-      videoId: this.videoId,
-      playerVars: this.playerVars
-    });
-
-    this.player.on('ready', this.playerReady);
-    this.player.on('stateChange', this.playerStateChange);
-    this.player.on('error', this.playerError);
-
-    if (this.resize) {
-      window.addEventListener('resize', this.onResize);
-    }
-
-    if (this.fitParent) {
-      this.resizeProportionally();
-    }
-  },
-  render: function render (h) {
-    return h('div')
-  }
-};
-
-function plugin (Vue) {
-  Vue.prototype.$youtube = {
-    getIdFromUrl: getYoutubeId
-  };
-
-  Vue.component('youtube', Youtube);
-}
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(plugin);
-}
-
-var version = '1.3.3';
-
-exports['default'] = plugin;
-exports.Youtube = Youtube;
-exports.version = version;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _sister = __webpack_require__(62);
-
-var _sister2 = _interopRequireDefault(_sister);
-
-var _loadYouTubeIframeApi = __webpack_require__(63);
-
-var _loadYouTubeIframeApi2 = _interopRequireDefault(_loadYouTubeIframeApi);
-
-var _YouTubePlayer = __webpack_require__(65);
-
-var _YouTubePlayer2 = _interopRequireDefault(_YouTubePlayer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * @typedef YT.Player
- * @see https://developers.google.com/youtube/iframe_api_reference
- * */
-
-/**
- * @see https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player
- */
-var youtubeIframeAPI = void 0;
-
-/**
- * A factory function used to produce an instance of YT.Player and queue function calls and proxy events of the resulting object.
- *
- * @param elementId Either An existing YT.Player instance,
- * the DOM element or the id of the HTML element where the API will insert an <iframe>.
- * @param options See `options` (Ignored when using an existing YT.Player instance).
- * @param strictState A flag designating whether or not to wait for
- * an acceptable state when calling supported functions. Default: `false`.
- * See `FunctionStateMap.js` for supported functions and acceptable states.
- */
-
-exports.default = function (maybeElementId) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var strictState = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var emitter = (0, _sister2.default)();
-
-  if (!youtubeIframeAPI) {
-    youtubeIframeAPI = (0, _loadYouTubeIframeApi2.default)(emitter);
-  }
-
-  if (options.events) {
-    throw new Error('Event handlers cannot be overwritten.');
-  }
-
-  if (typeof maybeElementId === 'string' && !document.getElementById(maybeElementId)) {
-    throw new Error('Element "' + maybeElementId + '" does not exist.');
-  }
-
-  options.events = _YouTubePlayer2.default.proxyEvents(emitter);
-
-  var playerAPIReady = new Promise(function (resolve) {
-    if (typeof maybeElementId === 'string' || maybeElementId instanceof HTMLElement) {
-      // eslint-disable-next-line promise/catch-or-return
-      youtubeIframeAPI.then(function (YT) {
-        var player = new YT.Player(maybeElementId, options);
-
-        emitter.on('ready', function () {
-          resolve(player);
-        });
-
-        return null;
-      });
-    } else if ((typeof maybeElementId === 'undefined' ? 'undefined' : _typeof(maybeElementId)) === 'object' && maybeElementId.playVideo instanceof Function) {
-      var player = maybeElementId;
-
-      resolve(player);
-    } else {
-      throw new TypeError('Unexpected state.');
-    }
-  });
-
-  var playerApi = _YouTubePlayer2.default.promisifyPlayer(playerAPIReady, strictState);
-
-  playerApi.on = emitter.on;
-  playerApi.off = emitter.off;
-
-  return playerApi;
-};
-
-module.exports = exports['default'];
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var Sister;
-
-/**
-* @link https://github.com/gajus/sister for the canonical source repository
-* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
-*/
-Sister = function () {
-    var sister = {},
-        events = {};
-
-    /**
-     * @name handler
-     * @function
-     * @param {Object} data Event data.
-     */
-
-    /**
-     * @param {String} name Event name.
-     * @param {handler} handler
-     * @return {listener}
-     */
-    sister.on = function (name, handler) {
-        var listener = {name: name, handler: handler};
-        events[name] = events[name] || [];
-        events[name].unshift(listener);
-        return listener;
-    };
-
-    /**
-     * @param {listener}
-     */
-    sister.off = function (listener) {
-        var index = events[listener.name].indexOf(listener);
-
-        if (index !== -1) {
-            events[listener.name].splice(index, 1);
-        }
-    };
-
-    /**
-     * @param {String} name Event name.
-     * @param {Object} data Event data.
-     */
-    sister.trigger = function (name, data) {
-        var listeners = events[name],
-            i;
-
-        if (listeners) {
-            i = listeners.length;
-            while (i--) {
-                listeners[i].handler(data);
-            }
-        }
-    };
-
-    return sister;
-};
-
-module.exports = Sister;
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _loadScript = __webpack_require__(64);
-
-var _loadScript2 = _interopRequireDefault(_loadScript);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (emitter) {
-  /**
-   * A promise that is resolved when window.onYouTubeIframeAPIReady is called.
-   * The promise is resolved with a reference to window.YT object.
-   */
-  var iframeAPIReady = new Promise(function (resolve) {
-    if (window.YT && window.YT.Player && window.YT.Player instanceof Function) {
-      resolve(window.YT);
-
-      return;
-    } else {
-      var protocol = window.location.protocol === 'http:' ? 'http:' : 'https:';
-
-      (0, _loadScript2.default)(protocol + '//www.youtube.com/iframe_api', function (error) {
-        if (error) {
-          emitter.trigger('error', error);
-        }
-      });
-    }
-
-    var previous = window.onYouTubeIframeAPIReady;
-
-    // The API will call this function when page has finished downloading
-    // the JavaScript for the player API.
-    window.onYouTubeIframeAPIReady = function () {
-      if (previous) {
-        previous();
-      }
-
-      resolve(window.YT);
-    };
-  });
-
-  return iframeAPIReady;
-};
-
-module.exports = exports['default'];
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports) {
-
-
-module.exports = function load (src, opts, cb) {
-  var head = document.head || document.getElementsByTagName('head')[0]
-  var script = document.createElement('script')
-
-  if (typeof opts === 'function') {
-    cb = opts
-    opts = {}
-  }
-
-  opts = opts || {}
-  cb = cb || function() {}
-
-  script.type = opts.type || 'text/javascript'
-  script.charset = opts.charset || 'utf8';
-  script.async = 'async' in opts ? !!opts.async : true
-  script.src = src
-
-  if (opts.attrs) {
-    setAttributes(script, opts.attrs)
-  }
-
-  if (opts.text) {
-    script.text = '' + opts.text
-  }
-
-  var onend = 'onload' in script ? stdOnEnd : ieOnEnd
-  onend(script, cb)
-
-  // some good legacy browsers (firefox) fail the 'in' detection above
-  // so as a fallback we always set onload
-  // old IE will ignore this and new IE will set onload
-  if (!script.onload) {
-    stdOnEnd(script, cb);
-  }
-
-  head.appendChild(script)
-}
-
-function setAttributes(script, attrs) {
-  for (var attr in attrs) {
-    script.setAttribute(attr, attrs[attr]);
-  }
-}
-
-function stdOnEnd (script, cb) {
-  script.onload = function () {
-    this.onerror = this.onload = null
-    cb(null, script)
-  }
-  script.onerror = function () {
-    // this.onload = null here is necessary
-    // because even IE9 works not like others
-    this.onerror = this.onload = null
-    cb(new Error('Failed to load ' + this.src), script)
-  }
-}
-
-function ieOnEnd (script, cb) {
-  script.onreadystatechange = function () {
-    if (this.readyState != 'complete' && this.readyState != 'loaded') return
-    this.onreadystatechange = null
-    cb(null, script) // there is no way to catch loading errors in IE8
-  }
-}
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _debug = __webpack_require__(66);
-
-var _debug2 = _interopRequireDefault(_debug);
-
-var _functionNames = __webpack_require__(69);
-
-var _functionNames2 = _interopRequireDefault(_functionNames);
-
-var _eventNames = __webpack_require__(70);
-
-var _eventNames2 = _interopRequireDefault(_eventNames);
-
-var _FunctionStateMap = __webpack_require__(71);
-
-var _FunctionStateMap2 = _interopRequireDefault(_FunctionStateMap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var debug = (0, _debug2.default)('youtube-player');
-
-var YouTubePlayer = {};
-
-/**
- * Construct an object that defines an event handler for all of the YouTube
- * player events. Proxy captured events through an event emitter.
- *
- * @todo Capture event parameters.
- * @see https://developers.google.com/youtube/iframe_api_reference#Events
- */
-YouTubePlayer.proxyEvents = function (emitter) {
-  var events = {};
-
-  var _loop = function _loop(eventName) {
-    var onEventName = 'on' + eventName.slice(0, 1).toUpperCase() + eventName.slice(1);
-
-    events[onEventName] = function (event) {
-      debug('event "%s"', onEventName, event);
-
-      emitter.trigger(eventName, event);
-    };
-  };
-
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = _eventNames2.default[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var eventName = _step.value;
-
-      _loop(eventName);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  return events;
-};
-
-/**
- * Delays player API method execution until player state is ready.
- *
- * @todo Proxy all of the methods using Object.keys.
- * @todo See TRICKY below.
- * @param playerAPIReady Promise that resolves when player is ready.
- * @param strictState A flag designating whether or not to wait for
- * an acceptable state when calling supported functions.
- * @returns {Object}
- */
-YouTubePlayer.promisifyPlayer = function (playerAPIReady) {
-  var strictState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var functions = {};
-
-  var _loop2 = function _loop2(functionName) {
-    if (strictState && _FunctionStateMap2.default[functionName]) {
-      functions[functionName] = function () {
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-          args[_key] = arguments[_key];
-        }
-
-        return playerAPIReady.then(function (player) {
-          var stateInfo = _FunctionStateMap2.default[functionName];
-          var playerState = player.getPlayerState();
-
-          // eslint-disable-next-line no-warning-comments
-          // TODO: Just spread the args into the function once Babel is fixed:
-          // https://github.com/babel/babel/issues/4270
-          //
-          // eslint-disable-next-line prefer-spread
-          var value = player[functionName].apply(player, args);
-
-          // TRICKY: For functions like `seekTo`, a change in state must be
-          // triggered given that the resulting state could match the initial
-          // state.
-          if (stateInfo.stateChangeRequired ||
-
-          // eslint-disable-next-line no-extra-parens
-          Array.isArray(stateInfo.acceptableStates) && stateInfo.acceptableStates.indexOf(playerState) === -1) {
-            return new Promise(function (resolve) {
-              var onPlayerStateChange = function onPlayerStateChange() {
-                var playerStateAfterChange = player.getPlayerState();
-
-                var timeout = void 0;
-
-                if (typeof stateInfo.timeout === 'number') {
-                  timeout = setTimeout(function () {
-                    player.removeEventListener('onStateChange', onPlayerStateChange);
-
-                    resolve();
-                  }, stateInfo.timeout);
-                }
-
-                if (Array.isArray(stateInfo.acceptableStates) && stateInfo.acceptableStates.indexOf(playerStateAfterChange) !== -1) {
-                  player.removeEventListener('onStateChange', onPlayerStateChange);
-
-                  clearTimeout(timeout);
-
-                  resolve();
-                }
-              };
-
-              player.addEventListener('onStateChange', onPlayerStateChange);
-            }).then(function () {
-              return value;
-            });
-          }
-
-          return value;
-        });
-      };
-    } else {
-      functions[functionName] = function () {
-        for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-          args[_key2] = arguments[_key2];
-        }
-
-        return playerAPIReady.then(function (player) {
-          // eslint-disable-next-line no-warning-comments
-          // TODO: Just spread the args into the function once Babel is fixed:
-          // https://github.com/babel/babel/issues/4270
-          //
-          // eslint-disable-next-line prefer-spread
-          return player[functionName].apply(player, args);
-        });
-      };
-    }
-  };
-
-  var _iteratorNormalCompletion2 = true;
-  var _didIteratorError2 = false;
-  var _iteratorError2 = undefined;
-
-  try {
-    for (var _iterator2 = _functionNames2.default[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-      var functionName = _step2.value;
-
-      _loop2(functionName);
-    }
-  } catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion2 && _iterator2.return) {
-        _iterator2.return();
-      }
-    } finally {
-      if (_didIteratorError2) {
-        throw _iteratorError2;
-      }
-    }
-  }
-
-  return functions;
-};
-
-exports.default = YouTubePlayer;
-module.exports = exports['default'];
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = __webpack_require__(67);
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = 'undefined' != typeof chrome
-               && 'undefined' != typeof chrome.storage
-                  ? chrome.storage.local
-                  : localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = [
-  'lightseagreen',
-  'forestgreen',
-  'goldenrod',
-  'dodgerblue',
-  'darkorchid',
-  'crimson'
-];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-function useColors() {
-  // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
-  // explicitly
-  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
-    return true;
-  }
-
-  // is webkit? http://stackoverflow.com/a/16459606/376773
-  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-    // is firebug? http://stackoverflow.com/a/398120/376773
-    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
-    // is firefox >= v31?
-    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
-    // double check webkit in userAgent just in case we are in a worker
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
-}
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-exports.formatters.j = function(v) {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    return '[UnexpectedJSONParseError]: ' + err.message;
-  }
-};
-
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-  var useColors = this.useColors;
-
-  args[0] = (useColors ? '%c' : '')
-    + this.namespace
-    + (useColors ? ' %c' : ' ')
-    + args[0]
-    + (useColors ? '%c ' : ' ')
-    + '+' + exports.humanize(this.diff);
-
-  if (!useColors) return;
-
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit')
-
-  // the final "%c" is somewhat tricky, because there could be other
-  // arguments passed either before or after the %c, so we need to
-  // figure out the correct index to insert the CSS into
-  var index = 0;
-  var lastC = 0;
-  args[0].replace(/%[a-zA-Z%]/g, function(match) {
-    if ('%%' === match) return;
-    index++;
-    if ('%c' === match) {
-      // we only are interested in the *last* %c
-      // (the user may have provided their own)
-      lastC = index;
-    }
-  });
-
-  args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-
-function log() {
-  // this hackery is required for IE8/9, where
-  // the `console.log` function doesn't have 'apply'
-  return 'object' === typeof console
-    && console.log
-    && Function.prototype.apply.call(console.log, console, arguments);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-
-function save(namespaces) {
-  try {
-    if (null == namespaces) {
-      exports.storage.removeItem('debug');
-    } else {
-      exports.storage.debug = namespaces;
-    }
-  } catch(e) {}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-
-function load() {
-  var r;
-  try {
-    r = exports.storage.debug;
-  } catch(e) {}
-
-  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"NODE_ENV":"development"}).DEBUG;
-  }
-
-  return r;
-}
-
-/**
- * Enable namespaces listed in `localStorage.debug` initially.
- */
-
-exports.enable(load());
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-  try {
-    return window.localStorage;
-  } catch (e) {}
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * This is the common logic for both the Node.js and web browser
- * implementations of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
-exports.coerce = coerce;
-exports.disable = disable;
-exports.enable = enable;
-exports.enabled = enabled;
-exports.humanize = __webpack_require__(68);
-
-/**
- * The currently active debug mode names, and names to skip.
- */
-
-exports.names = [];
-exports.skips = [];
-
-/**
- * Map of special "%n" handling functions, for the debug "format" argument.
- *
- * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
- */
-
-exports.formatters = {};
-
-/**
- * Previous log timestamp.
- */
-
-var prevTime;
-
-/**
- * Select a color.
- * @param {String} namespace
- * @return {Number}
- * @api private
- */
-
-function selectColor(namespace) {
-  var hash = 0, i;
-
-  for (i in namespace) {
-    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
-    hash |= 0; // Convert to 32bit integer
-  }
-
-  return exports.colors[Math.abs(hash) % exports.colors.length];
-}
-
-/**
- * Create a debugger with the given `namespace`.
- *
- * @param {String} namespace
- * @return {Function}
- * @api public
- */
-
-function createDebug(namespace) {
-
-  function debug() {
-    // disabled?
-    if (!debug.enabled) return;
-
-    var self = debug;
-
-    // set `diff` timestamp
-    var curr = +new Date();
-    var ms = curr - (prevTime || curr);
-    self.diff = ms;
-    self.prev = prevTime;
-    self.curr = curr;
-    prevTime = curr;
-
-    // turn the `arguments` into a proper Array
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-
-    args[0] = exports.coerce(args[0]);
-
-    if ('string' !== typeof args[0]) {
-      // anything else let's inspect with %O
-      args.unshift('%O');
-    }
-
-    // apply any `formatters` transformations
-    var index = 0;
-    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
-      // if we encounter an escaped % then don't increase the array index
-      if (match === '%%') return match;
-      index++;
-      var formatter = exports.formatters[format];
-      if ('function' === typeof formatter) {
-        var val = args[index];
-        match = formatter.call(self, val);
-
-        // now we need to remove `args[index]` since it's inlined in the `format`
-        args.splice(index, 1);
-        index--;
-      }
-      return match;
-    });
-
-    // apply env-specific formatting (colors, etc.)
-    exports.formatArgs.call(self, args);
-
-    var logFn = debug.log || exports.log || console.log.bind(console);
-    logFn.apply(self, args);
-  }
-
-  debug.namespace = namespace;
-  debug.enabled = exports.enabled(namespace);
-  debug.useColors = exports.useColors();
-  debug.color = selectColor(namespace);
-
-  // env-specific initialization logic for debug instances
-  if ('function' === typeof exports.init) {
-    exports.init(debug);
-  }
-
-  return debug;
-}
-
-/**
- * Enables a debug mode by namespaces. This can include modes
- * separated by a colon and wildcards.
- *
- * @param {String} namespaces
- * @api public
- */
-
-function enable(namespaces) {
-  exports.save(namespaces);
-
-  exports.names = [];
-  exports.skips = [];
-
-  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
-  var len = split.length;
-
-  for (var i = 0; i < len; i++) {
-    if (!split[i]) continue; // ignore empty strings
-    namespaces = split[i].replace(/\*/g, '.*?');
-    if (namespaces[0] === '-') {
-      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
-    } else {
-      exports.names.push(new RegExp('^' + namespaces + '$'));
-    }
-  }
-}
-
-/**
- * Disable debug output.
- *
- * @api public
- */
-
-function disable() {
-  exports.enable('');
-}
-
-/**
- * Returns true if the given mode name is enabled, false otherwise.
- *
- * @param {String} name
- * @return {Boolean}
- * @api public
- */
-
-function enabled(name) {
-  var i, len;
-  for (i = 0, len = exports.skips.length; i < len; i++) {
-    if (exports.skips[i].test(name)) {
-      return false;
-    }
-  }
-  for (i = 0, len = exports.names.length; i < len; i++) {
-    if (exports.names[i].test(name)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-/**
- * Coerce `val`.
- *
- * @param {Mixed} val
- * @return {Mixed}
- * @api private
- */
-
-function coerce(val) {
-  if (val instanceof Error) return val.stack || val.message;
-  return val;
-}
-
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports) {
-
-/**
- * Helpers.
- */
-
-var s = 1000;
-var m = s * 60;
-var h = m * 60;
-var d = h * 24;
-var y = d * 365.25;
-
-/**
- * Parse or format the given `val`.
- *
- * Options:
- *
- *  - `long` verbose formatting [false]
- *
- * @param {String|Number} val
- * @param {Object} [options]
- * @throws {Error} throw an error if val is not a non-empty string or a number
- * @return {String|Number}
- * @api public
- */
-
-module.exports = function(val, options) {
-  options = options || {};
-  var type = typeof val;
-  if (type === 'string' && val.length > 0) {
-    return parse(val);
-  } else if (type === 'number' && isNaN(val) === false) {
-    return options.long ? fmtLong(val) : fmtShort(val);
-  }
-  throw new Error(
-    'val is not a non-empty string or a valid number. val=' +
-      JSON.stringify(val)
-  );
-};
-
-/**
- * Parse the given `str` and return milliseconds.
- *
- * @param {String} str
- * @return {Number}
- * @api private
- */
-
-function parse(str) {
-  str = String(str);
-  if (str.length > 100) {
-    return;
-  }
-  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
-    str
-  );
-  if (!match) {
-    return;
-  }
-  var n = parseFloat(match[1]);
-  var type = (match[2] || 'ms').toLowerCase();
-  switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
-      return n * y;
-    case 'days':
-    case 'day':
-    case 'd':
-      return n * d;
-    case 'hours':
-    case 'hour':
-    case 'hrs':
-    case 'hr':
-    case 'h':
-      return n * h;
-    case 'minutes':
-    case 'minute':
-    case 'mins':
-    case 'min':
-    case 'm':
-      return n * m;
-    case 'seconds':
-    case 'second':
-    case 'secs':
-    case 'sec':
-    case 's':
-      return n * s;
-    case 'milliseconds':
-    case 'millisecond':
-    case 'msecs':
-    case 'msec':
-    case 'ms':
-      return n;
-    default:
-      return undefined;
-  }
-}
-
-/**
- * Short format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtShort(ms) {
-  if (ms >= d) {
-    return Math.round(ms / d) + 'd';
-  }
-  if (ms >= h) {
-    return Math.round(ms / h) + 'h';
-  }
-  if (ms >= m) {
-    return Math.round(ms / m) + 'm';
-  }
-  if (ms >= s) {
-    return Math.round(ms / s) + 's';
-  }
-  return ms + 'ms';
-}
-
-/**
- * Long format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtLong(ms) {
-  return plural(ms, d, 'day') ||
-    plural(ms, h, 'hour') ||
-    plural(ms, m, 'minute') ||
-    plural(ms, s, 'second') ||
-    ms + ' ms';
-}
-
-/**
- * Pluralization helper.
- */
-
-function plural(ms, n, name) {
-  if (ms < n) {
-    return;
-  }
-  if (ms < n * 1.5) {
-    return Math.floor(ms / n) + ' ' + name;
-  }
-  return Math.ceil(ms / n) + ' ' + name + 's';
-}
-
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-
-/**
- * @see https://developers.google.com/youtube/iframe_api_reference#Functions
- */
-exports.default = ['cueVideoById', 'loadVideoById', 'cueVideoByUrl', 'loadVideoByUrl', 'playVideo', 'pauseVideo', 'stopVideo', 'getVideoLoadedFraction', 'cuePlaylist', 'loadPlaylist', 'nextVideo', 'previousVideo', 'playVideoAt', 'setShuffle', 'setLoop', 'getPlaylist', 'getPlaylistIndex', 'setOption', 'mute', 'unMute', 'isMuted', 'setVolume', 'getVolume', 'seekTo', 'getPlayerState', 'getPlaybackRate', 'setPlaybackRate', 'getAvailablePlaybackRates', 'getPlaybackQuality', 'setPlaybackQuality', 'getAvailableQualityLevels', 'getCurrentTime', 'getDuration', 'removeEventListener', 'getVideoUrl', 'getVideoEmbedCode', 'getOptions', 'getOption', 'addEventListener', 'destroy', 'setSize', 'getIframe'];
-module.exports = exports['default'];
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-
-/**
- * @see https://developers.google.com/youtube/iframe_api_reference#Events
- * `volumeChange` is not officially supported but seems to work
- * it emits an object: `{volume: 82.6923076923077, muted: false}`
- */
-exports.default = ['ready', 'stateChange', 'playbackQualityChange', 'playbackRateChange', 'error', 'apiChange', 'volumeChange'];
-module.exports = exports['default'];
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _PlayerStates = __webpack_require__(72);
-
-var _PlayerStates2 = _interopRequireDefault(_PlayerStates);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-  pauseVideo: {
-    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PAUSED],
-    stateChangeRequired: false
-  },
-  playVideo: {
-    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PLAYING],
-    stateChangeRequired: false
-  },
-  seekTo: {
-    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PLAYING, _PlayerStates2.default.PAUSED],
-    stateChangeRequired: true,
-
-    // TRICKY: `seekTo` may not cause a state change if no buffering is
-    // required.
-    timeout: 3000
-  }
-};
-module.exports = exports['default'];
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  BUFFERING: 3,
-  ENDED: 0,
-  PAUSED: 2,
-  PLAYING: 1,
-  UNSTARTED: -1,
-  VIDEO_CUED: 5
-};
-module.exports = exports["default"];
 
 /***/ })
 /******/ ]);
