@@ -1,8 +1,8 @@
 <template>
   <div class="row-carousel-field-container w-full">
-    <div class="carousel-title">Carousel</div>
+    <div class="carousel-title">{{ __('Carousel') }}</div>
     <carousel :perPage="1" style="border: solid 1px #aaa; border-radius: 4px; padding: 25px 20px;">
-      <slide v-for="(slide, index) in value" :key="`curr-${slide.id}`">
+      <slide v-for="(slide) in value" :key="`curr-${slide.id}`">
         <row-container :id="slide.id"
                        :type="slide.type"
                        :in-slide="true"
@@ -25,7 +25,7 @@
           </template>
         </row-container>
       </slide>
-      <slide v-for="(tempSlide, index) in tempSlides" :key="`temp-${tempSlide.id}`">
+      <slide v-for="(tempSlide) in tempSlides" :key="`temp-${tempSlide.id}`">
         <row-container :id="tempSlide.id" :type="tempSlide.type"
                        :in-slide="true"
                        :readonly="readonly"

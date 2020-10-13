@@ -1,21 +1,21 @@
 <template>
   <div class="row-image-field-container w-full">
     <div v-if="!value && !readonly" class="submit-url-container justify-around">
-      <div class="w-full flex items-center">
-        <label :for="`image-url-input${id}`">Please provide the image URL:</label>
+      <div class="w-full flex items-center ml-1">
+        <label :for="`image-url-input${id}`">{{ __('Please provide the image URL') }}</label>
         <a :href="fileManagerUrl" target="_blank"
            class="btn btn-default btn-primary text-center w-1/3 ml-auto"
             v-if="fileManagerUrl">
-          FileManager
+          {{ __('File Manager') }}
         </a>
       </div>
       <input type="text" :id="`image-url-input${id}`"
              class="w-full form-control form-input form-input-bordered"
              :value="value"
-             :placeholder="`Example: https://cms-url.com/storage/image.jpg`">
+             :placeholder="`${__('Example')}: https://cms-url.com/storage/image.jpg`">
       <div class="btn btn-default btn-primary text-center clickable"
            @click="handleUrlSubmit">
-        Submit
+        {{ __('Submit') }}
       </div>
     </div>
     <img :src="value" alt="" v-else>

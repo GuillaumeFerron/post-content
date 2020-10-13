@@ -3,7 +3,7 @@
     <textarea :id="`text-input${id}`" v-if="!readonly"
               :value="value"
               class="w-full form-control form-input form-input-bordered py-3 h-auto"
-              placeholder="Text" @change="handleTextChange">
+              :placeholder="('Text')" @change="handleTextChange">
     </textarea>
     <div v-else>
       {{ value }}

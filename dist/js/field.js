@@ -5232,9 +5232,9 @@ var render = function() {
   return _c("div", { staticClass: "row-image-field-container w-full" }, [
     !_vm.value && !_vm.readonly
       ? _c("div", { staticClass: "submit-url-container justify-around" }, [
-          _c("div", { staticClass: "w-full flex items-center" }, [
+          _c("div", { staticClass: "w-full flex items-center ml-1" }, [
             _c("label", { attrs: { for: "image-url-input" + _vm.id } }, [
-              _vm._v("Please provide the image URL:")
+              _vm._v(_vm._s(_vm.__("Please provide the image URL")))
             ]),
             _vm._v(" "),
             _vm.fileManagerUrl
@@ -5245,7 +5245,11 @@ var render = function() {
                       "btn btn-default btn-primary text-center w-1/3 ml-auto",
                     attrs: { href: _vm.fileManagerUrl, target: "_blank" }
                   },
-                  [_vm._v("\n        FileManager\n      ")]
+                  [
+                    _vm._v(
+                      "\n        " + _vm._s(_vm.__("File Manager")) + "\n      "
+                    )
+                  ]
                 )
               : _vm._e()
           ]),
@@ -5255,7 +5259,8 @@ var render = function() {
             attrs: {
               type: "text",
               id: "image-url-input" + _vm.id,
-              placeholder: "Example: https://cms-url.com/storage/image.jpg"
+              placeholder:
+                _vm.__("Example") + ": https://cms-url.com/storage/image.jpg"
             },
             domProps: { value: _vm.value }
           }),
@@ -5266,7 +5271,7 @@ var render = function() {
               staticClass: "btn btn-default btn-primary text-center clickable",
               on: { click: _vm.handleUrlSubmit }
             },
-            [_vm._v("\n      Submit\n    ")]
+            [_vm._v("\n      " + _vm._s(_vm.__("Submit")) + "\n    ")]
           )
         ])
       : _c("img", { attrs: { src: _vm.value, alt: "" } }),
@@ -5445,9 +5450,9 @@ var render = function() {
   return _c("div", { staticClass: "row-video-field-container w-full" }, [
     !_vm.value && !_vm.readonly
       ? _c("div", { staticClass: "submit-url-container justify-around" }, [
-          _c("div", { staticClass: "w-full flex items-center" }, [
+          _c("div", { staticClass: "w-full flex items-center ml-1" }, [
             _c("label", { attrs: { for: "video-url-input" + _vm.id } }, [
-              _vm._v("Please provide the video URL:")
+              _vm._v(_vm._s(_vm.__("Please provide the video URL")))
             ]),
             _vm._v(" "),
             _vm.fileManagerUrl
@@ -5458,7 +5463,11 @@ var render = function() {
                       "btn btn-default btn-primary text-center w-1/3 ml-auto",
                     attrs: { href: _vm.fileManagerUrl, target: "_blank" }
                   },
-                  [_vm._v("\n        FileManager\n      ")]
+                  [
+                    _vm._v(
+                      "\n        " + _vm._s(_vm.__("File Manager")) + "\n      "
+                    )
+                  ]
                 )
               : _vm._e()
           ]),
@@ -5468,7 +5477,7 @@ var render = function() {
             attrs: {
               type: "text",
               id: "video-url-input" + _vm.id,
-              placeholder: "Example: https://vimeo.com/123456789"
+              placeholder: _vm.__("Example") + ": https://vimeo.com/123456789"
             },
             domProps: { value: _vm.value }
           }),
@@ -5479,7 +5488,7 @@ var render = function() {
               staticClass: "btn btn-default btn-primary text-center clickable",
               on: { click: _vm.handleUrlSubmit }
             },
-            [_vm._v("Submit")]
+            [_vm._v(_vm._s(_vm.__("Submit")) + " ")]
           )
         ])
       : _c(
@@ -6462,7 +6471,9 @@ var render = function() {
     "div",
     { staticClass: "row-carousel-field-container w-full" },
     [
-      _c("div", { staticClass: "carousel-title" }, [_vm._v("Carousel")]),
+      _c("div", { staticClass: "carousel-title" }, [
+        _vm._v(_vm._s(_vm.__("Carousel")))
+      ]),
       _vm._v(" "),
       _c(
         "carousel",
@@ -6475,7 +6486,7 @@ var render = function() {
           attrs: { perPage: 1 }
         },
         [
-          _vm._l(_vm.value, function(slide, index) {
+          _vm._l(_vm.value, function(slide) {
             return _c(
               "slide",
               { key: "curr-" + slide.id },
@@ -6529,7 +6540,7 @@ var render = function() {
             )
           }),
           _vm._v(" "),
-          _vm._l(_vm.tempSlides, function(tempSlide, index) {
+          _vm._l(_vm.tempSlides, function(tempSlide) {
             return _c(
               "slide",
               { key: "temp-" + tempSlide.id },
@@ -6822,22 +6833,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       },
       fieldOptions: {
         text: {
-          name: 'Text',
+          name: this.__('Text'),
           value: 'text',
           icon: __WEBPACK_IMPORTED_MODULE_9__utils_icons__["e" /* textIcon */]
         },
         image: {
-          name: 'Image',
+          name: this.__('Image'),
           value: 'image',
           icon: __WEBPACK_IMPORTED_MODULE_9__utils_icons__["c" /* imageIcon */]
         },
         video: {
-          name: 'Video',
+          name: this.__('Video'),
           value: 'video',
           icon: __WEBPACK_IMPORTED_MODULE_9__utils_icons__["f" /* videoIcon */]
         },
         carousel: {
-          name: 'Carousel',
+          name: this.__('Carousel'),
           value: 'carousel',
           icon: __WEBPACK_IMPORTED_MODULE_9__utils_icons__["b" /* carouselIcon */],
           sub_options: ['image', 'video']

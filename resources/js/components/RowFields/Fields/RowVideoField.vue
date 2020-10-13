@@ -1,16 +1,16 @@
 <template>
   <div class="row-video-field-container w-full">
     <div v-if="!value && !readonly" class="submit-url-container justify-around">
-      <div class="w-full flex items-center">
-        <label :for="`video-url-input${id}`">Please provide the video URL:</label>
+      <div class="w-full flex items-center ml-1">
+        <label :for="`video-url-input${id}`">{{ __('Please provide the video URL') }}</label>
         <a :href="fileManagerUrl" target="_blank"
            class="btn btn-default btn-primary text-center w-1/3 ml-auto"
            v-if="fileManagerUrl">
-          FileManager
+          {{ __('File Manager') }}
         </a>
       </div>
-      <input type="text" :id="`video-url-input${id}`" class="w-full form-control form-input form-input-bordered" :value="value" placeholder="Example: https://vimeo.com/123456789">
-      <div class="btn btn-default btn-primary text-center clickable" @click="handleUrlSubmit">Submit</div>
+      <input type="text" :id="`video-url-input${id}`" class="w-full form-control form-input form-input-bordered" :value="value" :placeholder="`${__('Example')}: https://vimeo.com/123456789`">
+      <div class="btn btn-default btn-primary text-center clickable" @click="handleUrlSubmit">{{ __('Submit') }} </div>
     </div>
     <div class="w-full" v-else>
       <vimeo-player ref="player" :video-id="vimeoID" :options="{title: '0', byline: '0', portrait: '0', width: inSlide ? '440' : '500'}" v-if="type === 'vimeo'"/>

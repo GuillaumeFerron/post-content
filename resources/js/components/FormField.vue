@@ -69,22 +69,22 @@
         },
         fieldOptions: {
           text: {
-            name: 'Text',
+            name: this.__('Text'),
             value: 'text',
             icon: textIcon
           },
           image: {
-            name: 'Image',
+            name: this.__('Image'),
             value: 'image',
             icon: imageIcon
           },
           video: {
-            name: 'Video',
+            name: this.__('Video'),
             value: 'video',
             icon: videoIcon
           },
           carousel: {
-            name: 'Carousel',
+            name: this.__('Carousel'),
             value: 'carousel',
             icon: carouselIcon,
             sub_options: ['image', 'video']
