@@ -5411,7 +5411,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
      * @returns {string}
      */
     vimeoID: function vimeoID() {
-      return this.value ? this.value.replace('https://', '').replace('www.', '').replace('vimeo.com/', '') : '';
+      return this.value ? this.value.replace('https://', '').replace('www.', '').replace('vimeo.com/', '').split('?')[0] : '';
     },
 
 
@@ -5421,7 +5421,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
      * @returns {string}
      */
     youtubeID: function youtubeID() {
-      return this.value ? this.value.replace('https://', '').replace('www.', '').replace('youtube.com/watch?v=', '').replace('youtu.be/', '') : '';
+      return this.value ? this.value.replace('https://', '').replace('www.', '').replace('youtube.com/', '').replace('watch', '').replace('?v=', '').split('&')[0] : '';
     },
     type: function type() {
       if (this.value) {
