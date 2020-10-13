@@ -48,7 +48,7 @@
         </row-container>
       </slide>
       <slide v-if="!readonly">
-        <add-row :options="options" @addOption="handleOptionEvent" :add-slide="true"></add-row>
+        <add-row :default="tempSlides.length == 0" :options="options" @addOption="handleOptionEvent" :add-slide="true"></add-row>
       </slide>
     </carousel>
   </div>

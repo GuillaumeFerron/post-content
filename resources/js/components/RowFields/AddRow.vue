@@ -51,6 +51,13 @@
         required: false,
         default: () => { return false }
       },
+      default: {
+        type: Boolean,
+        default: false
+      }
+    },
+    mounted() {
+      this.clicked = this.default
     },
     methods: {
       /**
